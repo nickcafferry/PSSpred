@@ -15,7 +15,7 @@ Base buffer: A mixture of a weak base and its salt will act as a buffer at pH > 
 ### Typical Buffer Systems: 
 
 #### Composition                 
-<table border="1" class="dataframe"><thead><tr style="text-align: right;"><th></th><th>Acid buffers</th><th>pKa</th></tr></thead><tbody><tr><th>0</th><td>CH3COOH/CH3CO2–</td><td>4.75</td></tr><tr><th>1</th><td>HNO2/NO2–</td><td>3.37</td></tr><tr><th>2</th><td>HClO2/ClO2–</td><td>2</td></tr><tr><th>3</th><td>Base buffers</td><td>pKa</td></tr><tr><th>4</th><td>NH4+/NH3</td><td>9.25</td></tr><tr><th>5</th><td>(CH3)3NH+/(CH3)3N</td><td>9.81</td></tr><tr><th>6</th><td>H2PO4–/HPO42–</td><td>7.21</td></tr></tbody></table>
+<table border="1" class="dataframe"><thead><tr style="text-align: right;"><th></th><th>Acid buffers</th><th>pKa</th><th>Base buffers</th><th>pka</th></tr></thead><tbody><tr><th>0</th><td>CH3COOH/CH3CO2–</td><td>4.75</td><td>NH4+/NH3</td><td>9.25</td></tr><tr><th>1</th><td>HNO2/NO2–</td><td>3.37</td><td>(CH3)3NH+/(CH3)3N</td><td>9.81</td></tr><tr><th>2</th><td>HClO2/ClO2–</td><td>2.00</td><td>H2PO4–/HPO42–</td><td>7.21</td></tr></tbody></table>
 
 ## Reference book
 
