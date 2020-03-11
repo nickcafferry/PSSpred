@@ -24,6 +24,4 @@ H2PO4–/HPO42–                                                  7.21
 
 The textbook can be downloaded at [![baidu]](https://pan.baidu.com/s/1VItr6GWSgxHdQaoQllxnaA) 
 
-[baidu]:http://www.baidu.com/img/bdlogo.gif "百度Logo" 
-
 Extract code: o1ir
