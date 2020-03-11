@@ -2,7 +2,8 @@
 
 A buffer is a mixture of a weak conjugate acid–base pair that stabilizes the pH of a solution by providing both a source and a sink for protons.
 
-![](https://github.com/nickcafferry/The-working-of-an-acid-buffer/blob/master/screenshots/A%20bufffer%20solution.png)
+![weak acid](https://github.com/nickcafferry/The-working-of-an-acid-buffer/blob/master/screenshots/A%20solution%20can%20act%20as%20a%20buffer.png)
+![weak base](https://github.com/nickcafferry/The-working-of-an-acid-buffer/blob/master/screenshots/A%20bufffer%20solution.png)
 
 
 ## Acid buffer and Base buffer
