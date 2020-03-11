@@ -4,13 +4,14 @@ A buffer is a mixture of a weak conjugate acid–base pair that stabilizes the p
 
 ## Acid buffer and Base buffer
 
-Acid buffer: A mixture of a weak acid and its salt will act as a buffer at pH 7 (the acidic side of neutrality) and is known as an acid buffer. 
+Acid buffer: A mixture of a weak acid and its salt will act as a buffer at pH < 7 (the acidic side of neutrality) and is known as an acid buffer. 
 
-Base buffer: A mixture of a weak base and its salt will act as a buffer at pH  7 (the basic side of neutrality) and is known as a basic buffer. 
+Base buffer: A mixture of a weak base and its salt will act as a buffer at pH > 7 (the basic side of neutrality) and is known as a basic buffer. 
 
 Typical Buffer Systems
-> Composition   pKa
+> Composition                        > pKa
 >> Acid buffers
+>>> CH3COOH/CH3CO2–                  >>> 4.75
 
 ## Reference book
 
