@@ -34,4 +34,3 @@ The textbook can be downloaded at [[Mei Wei]](https://pan.baidu.com/s/1VItr6GWSg
 
 Extract code: o1ir
 
-![Acid buffer and Base buffer](https://github.com/nickcafferry/The-working-of-an-acid-buffer/blob/master/.github/flights.csv)
