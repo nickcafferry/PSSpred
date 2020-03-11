@@ -12,21 +12,10 @@ Acid buffer: A mixture of a weak acid and its salt will act as a buffer at pH < 
 
 Base buffer: A mixture of a weak base and its salt will act as a buffer at pH > 7 (the basic side of neutrality) and is known as a basic buffer. 
 
-#### Typical Buffer Systems: 
+### Typical Buffer Systems: 
 
 #### Composition                 
-Acid buffers                   |                                  pKa 
-----------------------------------------------------------------------
-CH3COOH/CH3CO2–                |                                 4.75 
-HNO2/NO2–                      |                                 3.37 
-HClO2/ClO2–                    |                                 2.00 
-
-----------------------------------------------------------------------
-Base buffers                   |                                  pka
-----------------------------------------------------------------------
-NH4+/NH3                       |                                 9.25
-(CH3)3NH+/(CH3)3N              |                                 9.81
-H2PO4–/HPO42–                  |                                 7.21
+<table border="1" class="dataframe"><thead><tr style="text-align: right;"><th></th><th>Acid buffers</th><th>pKa</th></tr></thead><tbody><tr><th>0</th><td>CH3COOH/CH3CO2–</td><td>4.75</td></tr><tr><th>1</th><td>HNO2/NO2–</td><td>3.37</td></tr><tr><th>2</th><td>HClO2/ClO2–</td><td>2</td></tr><tr><th>3</th><td>Base buffers</td><td>pKa</td></tr><tr><th>4</th><td>NH4+/NH3</td><td>9.25</td></tr><tr><th>5</th><td>(CH3)3NH+/(CH3)3N</td><td>9.81</td></tr><tr><th>6</th><td>H2PO4–/HPO42–</td><td>7.21</td></tr></tbody></table>
 
 ## Reference book
 
