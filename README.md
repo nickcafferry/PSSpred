@@ -8,9 +8,9 @@ Acid buffer: A mixture of a weak acid and its salt will act as a buffer at pH < 
 
 Base buffer: A mixture of a weak base and its salt will act as a buffer at pH > 7 (the basic side of neutrality) and is known as a basic buffer. 
 
-Typical Buffer Systems: 
+#### Typical Buffer Systems: 
 
-Composition                 
+#### Composition                 
 Acid buffers                   |                                  pKa 
 ----------------------------------------------------------------------
 CH3COOH/CH3CO2–                |                                 4.75 
