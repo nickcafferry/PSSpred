@@ -1,8 +1,7 @@
-<!doctype html>
 <html>
 <head>
 <meta charset="utf-8">
-<title>首页</title>
+
 
 <style>
 html,body{
@@ -279,8 +278,6 @@ frame();
 </script>
 
 <div style="text-align:center;margin:50px 0; font:normal 14px/24px 'MicroSoft YaHei';">
-<p>适用浏览器：360、FireFox、Chrome、Opera、傲游、搜狗、世界之窗. 不支持Safari、IE8及以下浏览器。</p>
-<p>来源：<a href="http://sc.chinaz.com/" target="_blank">站长素材</a></p>
 </div>
 </body>
 </html>
