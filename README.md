@@ -10,12 +10,11 @@ Base buffer: A mixture of a weak base and its salt will act as a buffer at pH > 
 
 Typical Buffer Systems: 
 Composition                 
-|----------------------------------------------------------------------|
-|Acid buffers                   |                                  pKa |
-|----------------------------------------------------------------------|
-|CH3COOH/CH3CO2–                |                                 4.75 |
-|HNO2/NO2–                      |                                 3.37 |
-|HClO2/ClO2–                    |                                 2.00 |
+Acid buffers                   |                                  pKa 
+----------------------------------------------------------------------
+CH3COOH/CH3CO2–                |                                 4.75 
+HNO2/NO2–                      |                                 3.37 
+HClO2/ClO2–                    |                                 2.00 
 
 ----------------------------------------------------------------------
 Base buffers                   |                                  pka
