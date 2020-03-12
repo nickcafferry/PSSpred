@@ -1,2 +1,2 @@
-theme: next
+theme: jekyll-theme-minimal
 git clean && git d && git g
