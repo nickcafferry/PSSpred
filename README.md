@@ -18,13 +18,17 @@ Base buffer: A mixture of a weak base and its salt will act as a buffer at pH > 
 
 ## References
 
-The textbook can be downloaded at [[Wei Mei]](https://pan.baidu.com/s/1VItr6GWSgxHdQaoQllxnaA) 
+### Testbook
+The textbook can be downloaded at [[Wei Mei Textbook]](https://pan.baidu.com/s/1VItr6GWSgxHdQaoQllxnaA) 
 
 Extract code: o1ir
 
+### Powerpoint
+The PPT can be downloaded at [[Wei Mei PPT]]()
+
 [[Equation Solver]](https://docs.sympy.org/latest/modules/solvers/solvers.html)
 
-### Codes for solvering equation 1:
+#### Codes for solvering equation 1:
 import sympy
 
 import numpy as np
