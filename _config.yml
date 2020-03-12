@@ -1,1 +1,2 @@
-theme: jekyll-theme-time-machine
+theme: next
+git clean && git d && git g
