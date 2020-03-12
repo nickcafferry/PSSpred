@@ -76,6 +76,6 @@ print(sympy.solve(y-1,x))
         评论
     </div>
     <div class="gc-comments-info">
-        想在此留下评论，请访问 <a href="{{https://github.com/nickcafferry/Working-of-an-acid-buffer/blob/master/README.md}}">{{issues_link}}</a> 提交评论
+        想在此留下评论，请访问 <a href="{{issues_link}}">{{https://github.com/nickcafferry/Working-of-an-acid-buffer/blob/master/README.md}}</a> 提交评论
     </div>
 </div>
