@@ -70,12 +70,12 @@ print(sympy.solve(y-1,x))
 <style>
 .gc-comments {font-size: 12px;}
 </style>
-<script src="http://nimojs.github.io/github-comments/gc.js"></script>
+<script src="https://github.com/nickcafferry/Working-of-an-acid-buffer/blob/master/README.md/github-comments/gc.js"></script>
 <div class="gc-comments" data-repos="nimojs/github-comments" data-issues="1" >
     <div class="gc-comments-title">
         评论
     </div>
     <div class="gc-comments-info">
-        想在此留下评论，请访问 <a href="{{issues_link}}">{{issues_link}}</a> 提交评论
+        想在此留下评论，请访问 <a href="{{https://github.com/nickcafferry/Working-of-an-acid-buffer/blob/master/README.md}}">{{issues_link}}</a> 提交评论
     </div>
 </div>
