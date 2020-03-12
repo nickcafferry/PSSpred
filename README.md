@@ -24,7 +24,7 @@ Extract code: o1ir
 
 [[Equation Solver]](https://docs.sympy.org/latest/modules/solvers/solvers.html)
 
-
+### Codes for solvering equation 1:
 import sympy
 
 import numpy as np
@@ -40,7 +40,7 @@ print(sympy.solve(y-1,x))
 -math.log10(3.54*10**(-4))
 
 
-
+### Codes for solvering equation 2:
 import sympy
 
 import numpy as np
