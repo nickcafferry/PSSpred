@@ -18,7 +18,7 @@ Base buffer: A mixture of a weak base and its salt will act as a buffer at pH > 
 
 ## References
 
-The textbook can be downloaded at [[Mei Wei]](https://pan.baidu.com/s/1VItr6GWSgxHdQaoQllxnaA) 
+The textbook can be downloaded at [[Wei Mei]](https://pan.baidu.com/s/1VItr6GWSgxHdQaoQllxnaA) 
 
 Extract code: o1ir
 
