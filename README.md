@@ -69,7 +69,7 @@ print(sympy.solve(y-1,x))
 
 
 <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="https://github.com/nickcafferry/Working-of-an-acid-buffer/edit/master/README.md" data-title="Working of an acid buffer" data-url="https://github.com/nickcafferry/Working-of-an-acid-buffer/edit/master/README.md"></div>
+    <div class="ds-thread" data-thread-key="nickcafferry" data-title="Working of an acid buffer" data-url="https://github.com/nickcafferry/Working-of-an-acid-buffer/edit/master/README.md"></div>
 <!-- 多说评论框 end -->
 <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">
