@@ -24,6 +24,21 @@ Extract code: o1ir
 
 [[Equation Solver]](https://docs.sympy.org/latest/modules/solvers/solvers.html)
 
+import sympy
+import numpy as np
+import math
+x = sympy.Symbol('x')
+y = x*(0.5+x)*10**(4)/(1.77*(1-x))
+print(sympy.solve(y-1,x))
+-math.log10(3.54*10**(-4))
+
+import sympy
+import numpy as np
+import math
+x = sympy.Symbol('x')
+y = x*(0.4+x)*10**(4)/(1.77*(1.1-x))
+print(sympy.solve(y-1,x))
+-math.log10(4.85*10**(-4))
 
 ## Appendix
 
