@@ -26,6 +26,7 @@ Extract code: o1ir
 ### Powerpoint
 The PPT can be downloaded at [[Wei Mei PPT]]()
 
+### Equation Solver
 [[Equation Solver]](https://docs.sympy.org/latest/modules/solvers/solvers.html)
 
 #### Codes for solvering equation 1:
