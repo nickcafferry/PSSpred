@@ -24,7 +24,7 @@ The textbook can be downloaded at [[Wei Mei Textbook]](https://pan.baidu.com/s/1
 Extract code: o1ir
 
 ### Powerpoint
-The PPT can be downloaded at [[Wei Mei PPT]]()
+The PPT can be downloaded at [[Wei Mei PPT]](https://github.com/nickcafferry/Working-of-an-acid-buffer/blob/master/Powerpoint/Working%20of%20an%20acid%20buffer.pps)
 
 ### Equation Solver
 [[Equation Solver]](https://docs.sympy.org/latest/modules/solvers/solvers.html)
