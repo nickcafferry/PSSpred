@@ -1,4 +1,4 @@
-# The working of an acid buffer
+# Working of an acid buffer
 
 A buffer is a mixture of a weak conjugate acid–base pair that stabilizes the pH of a solution by providing both a source and a sink for protons.
 
