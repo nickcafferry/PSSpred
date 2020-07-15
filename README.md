@@ -60,6 +60,7 @@ print(sympy.solve(y-1,x))
 
 -math.log10(4.85*10**(-4))
 
+<apply><divide/><apply><sin/><apply><plus/><apply><times/><cn>3</cn><ci>x</ci></apply><apply><times/><ci>y</ci><apply><power/><ci>z</ci><cn>2</cn></apply></apply></apply></apply><cn>3</cn></apply>
 
 
 ## Appendix
