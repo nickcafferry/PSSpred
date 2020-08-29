@@ -23,7 +23,25 @@ jobs:
         echo '======================='
         pip3 install you-get
         export PATH="$PATH:/home/runner/.local/bin:/home/runner/you_get"
-        you-get -o ./you_get/ --debug 'https://www.iqiyi.com/v_19rr7q5ado.html?vfrm=pcw_home&vfrmblk=LB&vfrmrst=712211_dianyingbang_title7' 
+        you-get -o ./you_get/ 'https://www.bilibili.com/video/BV1vJ411X72C?p=1' 
+        you-get -o ./you_get/ 'https://www.bilibili.com/video/BV1vJ411X72C?p=2'
+        you-get -o ./you_get/ 'https://www.bilibili.com/video/BV1vJ411X72C?p=3'
+        you-get -o ./you_get/ 'https://www.bilibili.com/video/BV1vJ411X72C?p=4'
+        you-get -o ./you_get/ 'https://www.bilibili.com/video/BV1vJ411X72C?p=5'
+        you-get -o ./you_get/ 'https://www.bilibili.com/video/BV1vJ411X72C?p=6'
+        you-get -o ./you_get/ 'https://www.bilibili.com/video/BV1vJ411X72C?p=7'
+        you-get -o ./you_get/ 'https://www.bilibili.com/video/BV1vJ411X72C?p=8'
+        you-get -o ./you_get/ 'https://www.bilibili.com/video/BV1vJ411X72C?p=9'
+        you-get -o ./you_get/ 'https://www.bilibili.com/video/BV1vJ411X72C?p=10'
+        you-get -o ./you_get/ 'https://www.bilibili.com/video/BV1vJ411X72C?p=11'
+        you-get -o ./you_get/ 'https://www.bilibili.com/video/BV1vJ411X72C?p=12'
+        you-get -o ./you_get/ 'https://www.bilibili.com/video/BV1vJ411X72C?p=13'
+        you-get -o ./you_get/ 'https://www.bilibili.com/video/BV1vJ411X72C?p=14'
+        you-get -o ./you_get/ 'https://www.bilibili.com/video/BV1vJ411X72C?p=15'
+        you-get -o ./you_get/ 'https://www.bilibili.com/video/BV1vJ411X72C?p=16'
+        you-get -o ./you_get/ 'https://www.bilibili.com/video/BV1vJ411X72C?p=17'
+        you-get -o ./you_get/ 'https://www.bilibili.com/video/BV1vJ411X72C?p=18'
+                  
         
         ls
         echo '------------------------------'
