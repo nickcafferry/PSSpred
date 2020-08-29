@@ -34,7 +34,7 @@ jobs:
         ls 
         echo '~~~~~~~~~~~~~~~~~~~~~~'
         cd ../
-        mkdir Working-of-an-acid-buffer/videos
+
         cp -r you_get/. Working-of-an-acid-buffer/videos
         cd Working-of-an-acid-buffer/
         git config --global user.email "ucecwme@ucl.ac.uk"
