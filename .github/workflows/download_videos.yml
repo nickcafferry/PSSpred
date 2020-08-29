@@ -23,10 +23,10 @@ jobs:
         echo '======================='
         pip3 install you-get
         export PATH="$PATH:/home/runner/.local/bin:/home/runner/you_get"
-        you-get -o ./you_get/ --debug 'https://www.bilibili.com/video/BV1vJ411X72C?p=9' 
-        you-get -o ./you_get/ --debug 'https://www.bilibili.com/video/BV1vJ411X72C?p=10'
-        you-get -o ./you_get/ --debug 'https://www.bilibili.com/video/BV1vJ411X72C?p=11'
-        you-get -o ./you_get/ --debug 'https://www.bilibili.com/video/BV1vJ411X72C?p=12'
+        you-get -o ./you_get/ --debug 'https://www.bilibili.com/video/BV1vJ411X72C?p=13' 
+        you-get -o ./you_get/ --debug 'https://www.bilibili.com/video/BV1vJ411X72C?p=14'
+        you-get -o ./you_get/ --debug 'https://www.bilibili.com/video/BV1vJ411X72C?p=15'
+        you-get -o ./you_get/ --debug 'https://www.bilibili.com/video/BV1vJ411X72C?p=16'
   
         ls
         echo '------------------------------'
