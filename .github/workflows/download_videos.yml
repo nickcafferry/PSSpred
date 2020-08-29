@@ -27,11 +27,7 @@ jobs:
         you-get -o ./you_get/ --debug 'https://www.bilibili.com/video/BV1vJ411X72C?p=2'
         you-get -o ./you_get/ --debug 'https://www.bilibili.com/video/BV1vJ411X72C?p=3'
         you-get -o ./you_get/ --debug 'https://www.bilibili.com/video/BV1vJ411X72C?p=4'
-        you-get -o ./you_get/ --debug 'https://www.bilibili.com/video/BV1vJ411X72C?p=5'
-        you-get -o ./you_get/ --debug 'https://www.bilibili.com/video/BV1vJ411X72C?p=6'
-        you-get -o ./you_get/ --debug 'https://www.bilibili.com/video/BV1vJ411X72C?p=7'
-        you-get -o ./you_get/ --debug 'https://www.bilibili.com/video/BV1vJ411X72C?p=8'
-
+  
         ls
         echo '------------------------------'
         cd you_get
