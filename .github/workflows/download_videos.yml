@@ -23,7 +23,7 @@ jobs:
         echo '======================='
         pip3 install you-get
         export PATH="$PATH:/home/runner/.local/bin:/home/runner/you_get"
-        you-get -o ./you_get/ 'https://www.iqiyi.com/v_19rr7q5ado.html?vfrm=pcw_home&vfrmblk=LB&vfrmrst=712211_dianyingbang_title7' 
+        you-get -o ./you_get/ --debug 'https://www.iqiyi.com/v_19rr7q5ado.html?vfrm=pcw_home&vfrmblk=LB&vfrmrst=712211_dianyingbang_title7' 
         
         ls
         echo '------------------------------'
