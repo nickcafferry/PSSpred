@@ -23,9 +23,11 @@ jobs:
         echo '======================='
         pip3 install you-get
         export PATH="$PATH:/home/runner/.local/bin:/home/runner/you_get"
-        you-get -o ./you_get/ 'https://www.bilibili.com/video/BV1vJ411X72C?p=14'
+
         you-get -o ./you_get/ --debug 'https://www.bilibili.com/video/BV1vJ411X72C?p=15'
         you-get -o ./you_get/ --debug 'https://www.bilibili.com/video/BV1vJ411X72C?p=16' 
+        you-get -o ./you_get/ --debug 'https://www.bilibili.com/video/BV1vJ411X72C?p=17'
+        you-get -o ./you_get/ --debug 'https://www.bilibili.com/video/BV1vJ411X72C?p=18'         
 
   
         ls
