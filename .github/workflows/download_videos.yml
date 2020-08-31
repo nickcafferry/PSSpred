@@ -24,12 +24,8 @@ jobs:
         pip3 install you-get
         export PATH="$PATH:/home/runner/.local/bin:/home/runner/you_get"
 
-        you-get -o ./you_get/ --debug 'http://open.163.com/newview/movie/free?pid=M6TUCF6FT&mid=M6TUCLS2K'
-        you-get -o ./you_get/ --debug 'http://open.163.com/newview/movie/free?pid=M6TUCF6FT&mid=M6TUCR7GA' 
-        you-get -o ./you_get/ --debug 'http://open.163.com/newview/movie/free?pid=M6TUCF6FT&mid=M6TUCS2CU'
-        you-get -o ./you_get/ --debug 'http://open.163.com/newview/movie/free?pid=M6TUCF6FT&mid=M6TUCSC7V'         
-
-  
+        you-get -o ./you_get/ --debug 'http://www.core.org.cn/OcwWeb/Chemical-Engineering/10-52Spring-2006/CourseHome/index.htm'
+        
         ls
         echo '------------------------------'
         cd you_get
