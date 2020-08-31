@@ -24,10 +24,10 @@ jobs:
         pip3 install you-get
         export PATH="$PATH:/home/runner/.local/bin:/home/runner/you_get"
 
-        you-get -o ./you_get/ --debug 'https://www.bilibili.com/video/BV1vJ411X72C?p=15'
-        you-get -o ./you_get/ --debug 'https://www.bilibili.com/video/BV1vJ411X72C?p=16' 
-        you-get -o ./you_get/ --debug 'https://www.bilibili.com/video/BV1vJ411X72C?p=17'
-        you-get -o ./you_get/ --debug 'https://www.bilibili.com/video/BV1vJ411X72C?p=18'         
+        you-get -o ./you_get/ --debug 'http://open.163.com/newview/movie/free?pid=M6TUCF6FT&mid=M6TUCLS2K'
+        you-get -o ./you_get/ --debug 'http://open.163.com/newview/movie/free?pid=M6TUCF6FT&mid=M6TUCR7GA' 
+        you-get -o ./you_get/ --debug 'http://open.163.com/newview/movie/free?pid=M6TUCF6FT&mid=M6TUCS2CU'
+        you-get -o ./you_get/ --debug 'http://open.163.com/newview/movie/free?pid=M6TUCF6FT&mid=M6TUCSC7V'         
 
   
         ls
@@ -37,12 +37,12 @@ jobs:
         echo '~~~~~~~~~~~~~~~~~~~~~~'
         cd ../
 
-        cp -r you_get/. Working-of-an-acid-buffer/videos
+        cp -r you_get/. Working-of-an-acid-buffer/videos/Principal_of_Chemical_Science/
         cd Working-of-an-acid-buffer/
         git config --global user.email "ucecwme@ucl.ac.uk"
         git config --global user.name "nickcafferry"
         git init
-        cd videos/
+        cd videos/Principal_of_Chemical_Science/
         git add -A
         git status 
         git commit -m "Add some videos"
