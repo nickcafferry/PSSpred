@@ -25,6 +25,7 @@ jobs:
         export PATH="$PATH:/home/runner/.local/bin:/home/runner/you_get"
 
         you-get -o ./you_get/ --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALO80IJ2_sd.mp4'
+        you-get -o ./you_get/ --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALO80VNS_sd.mp4'
         
         ls
         echo '------------------------------'
@@ -33,15 +34,12 @@ jobs:
         echo '~~~~~~~~~~~~~~~~~~~~~~'
         cd ../
 
-        cp -r you_get/. Working-of-an-acid-buffer/videos/Principal_of_Chemical_Science/
-        cd Working-of-an-acid-buffer/
-        git config --global user.email "ucecwme@ucl.ac.uk"
-        git config --global user.name "nickcafferry"
-        git init
-        cd videos/Principal_of_Chemical_Science/
-        git add -A
-        git status 
-        git commit -m "Add some videos"
+        cd you_get/
         ls
-        git push origin master
+        pwd
+        
+    - uses: actions/upload-artifact@v2
+      with:
+        name: quantum videos
+        path: /home/runner/work/Working-of-an-acid-buffer/you_get/
 
