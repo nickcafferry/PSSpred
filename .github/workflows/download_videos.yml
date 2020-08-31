@@ -24,7 +24,7 @@ jobs:
         pip3 install you-get
         export PATH="$PATH:/home/runner/.local/bin:/home/runner/you_get"
 
-        you-get -o ./you_get/ --debug 'http://www.core.org.cn/OcwWeb/Chemical-Engineering/10-52Spring-2006/CourseHome/index.htm'
+        you-get -o ./you_get/ --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALO80IJ2_sd.mp4'
         
         ls
         echo '------------------------------'
