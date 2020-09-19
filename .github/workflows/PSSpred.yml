@@ -26,7 +26,6 @@ jobs:
          cd videos/
          git rm -rf *
          git commit -m "delete some irrelevant materials"
-         cd ../
          git push origin master
 #         cd src/
 #
