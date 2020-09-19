@@ -25,6 +25,8 @@ jobs:
          ls
          cd videos/
          git rm -rf *
+         cd ../
+         git push origin master
 #         cd src/
 #
 #         mkdir PSSpred_v1
