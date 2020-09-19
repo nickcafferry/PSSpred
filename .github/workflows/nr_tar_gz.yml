@@ -1,85 +1,3 @@
-#         cd nr/
-#         
-#         git add nr.00.phr
-#         git commit -m "add nr.00.phr"
-#         
-#         git add nr.00.pin
-#         git commit -m "add nr.00.pin"
-#         
-#         git add nr.00.pnd
-#         git commit -m "add nr.00.pnd"         
-# 
-#         git add nr.00.pni
-#         git commit -m "add nr.00.pni"  
-#
-#         git add nr.00.psi
-#         git commit -m "add nr.00.psi"  
-#         
-#         
-#         
-#         git add nr.01.phr
-#         git commit -m "add nr.00.phr"
-#         
-#         git add nr.01.pin
-#         git commit -m "add nr.00.pin"
-#         
-#         git add nr.01.pnd
-#         git commit -m "add nr.00.pnd"         
-# 
-#         git add nr.01.pni
-#         git commit -m "add nr.00.pni"  
-#
-#         git add nr.01.psi
-#         git commit -m "add nr.00.psi"  
-#         
-#         git add nr.01.psd
-#         git commit -m "add nr.00.psi"  
-#         
-#         
-#         
-#         git add nr.02.phr
-#         git commit -m "add nr.00.phr"
-#         
-#         git add nr.02.pin
-#         git commit -m "add nr.00.pin"
-#         
-#         git add nr.02.pnd
-#         git commit -m "add nr.00.pnd"         
-# 
-#         git add nr.02.pni
-#         git commit -m "add nr.00.pni"  
-#
-#         git add nr.02.psd
-#         git commit -m "add nr.00.psi"  
-#         
-#         git add nr.02.psi
-#         git commit -m "add nr.00.psi"  
-#         
-#         
-#         git add nr.03.phr
-#         git commit -m "add nr.00.phr"
-#         
-#         git add nr.03.pin
-#         git commit -m "add nr.00.pin"
-#         
-#         git add nr.03.pnd
-#         git commit -m "add nr.00.pnd"         
-# 
-#         git add nr.03.pni
-#         git commit -m "add nr.00.pni"  
-#
-#         git add nr.03.psd
-#         git commit -m "add nr.00.psi"  
-#         
-#         git add nr.03.psi
-#         git commit -m "add nr.00.psi"  
-#         
-#         git add nr.pal
-#         git commit -m "add nr.pal"  
-#         
-#         git add nr.psd
-#         git commit -m "add nr.psd"  
-         
 name: nr downloader
 
 on:
@@ -96,25 +14,33 @@ jobs:
     - name: Checkout
       uses: actions/checkout@master
 
-    - name: Clone pre repositories
+    - name: running perl
       run: |
          git config --global user.email "ucecwme@ucl.ac.uk"
          git config --global user.name "nickcafferry"
          git init
-         git lfs install
-         echo -e "machine github.com\n  login $GITHUB_TOKEN" > ~/.netrc
-         git lfs pull
-         ls
+         echo "Initializing Repository.........."
+         
+         echo "---------------------------------------------"
+         cd ../
+         mkdir output
+         echo "output file already created!"
+         
+         echo "---------------------------------------------"
+         cd PSSpred/
          cd src/
          mkdir nr
          cd nr/
          wget -O nr.tar.gz https://zhanglab.ccmb.med.umich.edu/cgi-bin/download_ftp.cgi?ID=nr.tar.gz
          tar -zxvf nr.tar.gz
-         git add -A
-         
-         ls -lh
-         cd nr/
-         ls -lh
-         cd ../../../
+         echo "nr.tar.gz already unpacked!"
+         echo "Show the path of this file: "
          pwd
-         git push origin master
+         
+         cd ../
+         apt-get install perl
+         export PATH="$PATH:/home/runner/.local/bin:/home/runner/output"
+         cd PSSpred_v4/
+         ./PSSpred.pl seq.fasta
+         pwd
+
