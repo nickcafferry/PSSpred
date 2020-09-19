@@ -38,8 +38,6 @@ jobs:
          pwd
          
          cd ../
-         apt-get install perl
-         export PATH="$PATH:/home/runner/.local/bin:/home/runner/output"
          cd PSSpred_v4/
          ./PSSpred.pl seq.fasta
          pwd
