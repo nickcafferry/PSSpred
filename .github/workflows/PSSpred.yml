@@ -1,7 +1,7 @@
 #         git lfs install
 #         echo -e "machine github.com\n  login $GITHUB_TOKEN" > ~/.netrc
 #         git lfs pull
-name: PSSpred
+name: PSSpred Setup
 
 on:
   push:
@@ -26,7 +26,7 @@ jobs:
          
          cd src/
          git mv -f PSSpred_V3 PSSpred_v3
-         git add -u test_file
+         git add -u PSSpred_v3
          git commit -m "Rename PSSpred_v3"
          mkdir PSSpred_v2
          cd PSSpred_v2/
