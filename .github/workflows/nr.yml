@@ -1,4 +1,4 @@
-name: PSSpred
+name: nr
 
 on:
   push:
@@ -8,7 +8,7 @@ on:
 jobs:
   build_docs_and_deploy:
     runs-on: ubuntu-latest
-    name: Protein Secondary Structure prediction
+    name: nr
 
     steps:
     - name: Checkout
