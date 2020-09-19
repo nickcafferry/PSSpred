@@ -9,77 +9,77 @@ jobs:
   build_docs_and_deploy:
     runs-on: ubuntu-latest
     name: download
-
-    steps:
-    - name: Checkout
-      uses: actions/checkout@master
-    
-    - name: Install You-get
-      id: videos
-      run: |
-        cd ..
-        mkdir you_get
-        ls
-        echo '======================='
-        pip3 install you-get
-        export PATH="$PATH:/home/runner/.local/bin:/home/runner/you_get"
-
-        you-get -o ./you_get/ -O 1.mp4 --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALO80IJ2_sd.mp4'
-        you-get -o ./you_get/ -O 2.mp4 --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALO80VNS_sd.mp4'
-        you-get -o ./you_get/ -O 3.mp4 --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALO81AOI_sd.mp4'
-        you-get -o ./you_get/ -O 4.mp4 --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALO81JRA_sd.mp4'
-        you-get -o ./you_get/ -O 5.mp4 --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALO81EUS_sd.mp4'
-        
-        you-get -o ./you_get/ -O 6.mp4 --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALO8IV4R_sd.mp4'
-        you-get -o ./you_get/ -O 7.mp4 --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALO8J4R2_sd.mp4'
-        you-get -o ./you_get/ -O 8.mp4 --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALO8ISPT_sd.mp4'
-        you-get -o ./you_get/ -O 9.mp4 --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALO8J4TK_sd.mp4'
-        you-get -o ./you_get/ -O 10.mp4 --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALO8JGIF_sd.mp4'
-        
-        you-get -o ./you_get/ -O 11.mp4 --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALO9004B_sd.mp4'
-        you-get -o ./you_get/ -O 12.mp4 --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALO8VVEM_sd.mp4'
-        you-get -o ./you_get/ -O 13.mp4 --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALO90DEI_sd.mp4'
-        you-get -o ./you_get/ -O 14.mp4 --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALO90AMI_sd.mp4'
-        you-get -o ./you_get/ -O 15.mp4 --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALO90RQC_sd.mp4'
-        
-        you-get -o ./you_get/ -O 16.mp4 --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALO9L0MN_sd.mp4'
-        you-get -o ./you_get/ -O 17.mp4 --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALO9JQRH_sd.mp4'
-        you-get -o ./you_get/ -O 18.mp4 --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALO9LBM2_sd.mp4'
-        you-get -o ./you_get/ -O 19.mp4 --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALO9LEFU_sd.mp4'
-        you-get -o ./you_get/ -O 20.mp4 --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALOA133N_sd.mp4' 
-        
-        you-get -o ./you_get/ -O 21.mp4 --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALOAHD34_sd.mp4'
-        you-get -o ./you_get/ -O 22.mp4 --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALOAHJRM_sd.mp4'
-        you-get -o ./you_get/ -O 23.mp4 --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALOAHSF8_sd.mp4'
-        you-get -o ./you_get/ -O 24.mp4 --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALOAI38M_sd.mp4'
-        you-get -o ./you_get/ -O 25.mp4 --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALOAIBTE_sd.mp4'
-        
-        you-get -o ./you_get/ -O 26.mp4 --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALOB2EB3_sd.mp4'
-        you-get -o ./you_get/ -O 27.mp4 --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALOB2MO2_sd.mp4'
-        you-get -o ./you_get/ -O 28.mp4 --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALO81AOI_sd.mp4'
-        you-get -o ./you_get/ -O 29.mp4 --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALOB2T6J_sd.mp4'
-        you-get -o ./you_get/ -O 30.mp4 --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALOB2VG1_sd.mp4'
- 
-        you-get -o ./you_get/ -O 31.mp4 --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALOB31NI_sd.mp4'
-        you-get -o ./you_get/ -O 32.mp4 --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALOBKM9N_sd.mp4'
-        you-get -o ./you_get/ -O 33.mp4 --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALOBLCPN_sd.mp4'
-        you-get -o ./you_get/ -O 34.mp4 --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALOBLKOC_sd.mp4'
-        you-get -o ./you_get/ -O 35.mp4 --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALOBLS98_sd.mp4'
-        you-get -o ./you_get/ -O 36.mp4 --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALOC1DOG_sd.mp4'
-        
-        ls
-        echo '------------------------------'
-        cd you_get
-        ls 
-        echo '~~~~~~~~~~~~~~~~~~~~~~'
-        cd ../
-
-        cd you_get/
-        ls
-        pwd
-        
-    - uses: actions/upload-artifact@v2
-      with:
-        name: quantum videos
-        path: /home/runner/work/Working-of-an-acid-buffer/you_get/
+# 
+#     steps:
+#     - name: Checkout
+#       uses: actions/checkout@master
+#     
+#     - name: Install You-get
+#       id: videos
+#       run: |
+#         cd ..
+#         mkdir you_get
+#         ls
+#         echo '======================='
+#         pip3 install you-get
+#         export PATH="$PATH:/home/runner/.local/bin:/home/runner/you_get"
+# 
+#         you-get -o ./you_get/ -O 1.mp4 --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALO80IJ2_sd.mp4'
+#         you-get -o ./you_get/ -O 2.mp4 --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALO80VNS_sd.mp4'
+#         you-get -o ./you_get/ -O 3.mp4 --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALO81AOI_sd.mp4'
+#         you-get -o ./you_get/ -O 4.mp4 --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALO81JRA_sd.mp4'
+#         you-get -o ./you_get/ -O 5.mp4 --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALO81EUS_sd.mp4'
+#         
+#         you-get -o ./you_get/ -O 6.mp4 --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALO8IV4R_sd.mp4'
+#         you-get -o ./you_get/ -O 7.mp4 --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALO8J4R2_sd.mp4'
+#         you-get -o ./you_get/ -O 8.mp4 --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALO8ISPT_sd.mp4'
+#         you-get -o ./you_get/ -O 9.mp4 --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALO8J4TK_sd.mp4'
+#         you-get -o ./you_get/ -O 10.mp4 --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALO8JGIF_sd.mp4'
+#         
+#         you-get -o ./you_get/ -O 11.mp4 --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALO9004B_sd.mp4'
+#         you-get -o ./you_get/ -O 12.mp4 --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALO8VVEM_sd.mp4'
+#         you-get -o ./you_get/ -O 13.mp4 --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALO90DEI_sd.mp4'
+#         you-get -o ./you_get/ -O 14.mp4 --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALO90AMI_sd.mp4'
+#         you-get -o ./you_get/ -O 15.mp4 --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALO90RQC_sd.mp4'
+#         
+#         you-get -o ./you_get/ -O 16.mp4 --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALO9L0MN_sd.mp4'
+#         you-get -o ./you_get/ -O 17.mp4 --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALO9JQRH_sd.mp4'
+#         you-get -o ./you_get/ -O 18.mp4 --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALO9LBM2_sd.mp4'
+#         you-get -o ./you_get/ -O 19.mp4 --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALO9LEFU_sd.mp4'
+#         you-get -o ./you_get/ -O 20.mp4 --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALOA133N_sd.mp4' 
+#         
+#         you-get -o ./you_get/ -O 21.mp4 --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALOAHD34_sd.mp4'
+#         you-get -o ./you_get/ -O 22.mp4 --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALOAHJRM_sd.mp4'
+#         you-get -o ./you_get/ -O 23.mp4 --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALOAHSF8_sd.mp4'
+#         you-get -o ./you_get/ -O 24.mp4 --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALOAI38M_sd.mp4'
+#         you-get -o ./you_get/ -O 25.mp4 --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALOAIBTE_sd.mp4'
+#         
+#         you-get -o ./you_get/ -O 26.mp4 --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALOB2EB3_sd.mp4'
+#         you-get -o ./you_get/ -O 27.mp4 --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALOB2MO2_sd.mp4'
+#         you-get -o ./you_get/ -O 28.mp4 --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALO81AOI_sd.mp4'
+#         you-get -o ./you_get/ -O 29.mp4 --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALOB2T6J_sd.mp4'
+#         you-get -o ./you_get/ -O 30.mp4 --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALOB2VG1_sd.mp4'
+#  
+#         you-get -o ./you_get/ -O 31.mp4 --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALOB31NI_sd.mp4'
+#         you-get -o ./you_get/ -O 32.mp4 --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALOBKM9N_sd.mp4'
+#         you-get -o ./you_get/ -O 33.mp4 --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALOBLCPN_sd.mp4'
+#         you-get -o ./you_get/ -O 34.mp4 --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALOBLKOC_sd.mp4'
+#         you-get -o ./you_get/ -O 35.mp4 --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALOBLS98_sd.mp4'
+#         you-get -o ./you_get/ -O 36.mp4 --debug 'http://mov.bn.netease.com/open-movie/nos/mp4/2015/04/08/SALOC1DOG_sd.mp4'
+#         
+#         ls
+#         echo '------------------------------'
+#         cd you_get
+#         ls 
+#         echo '~~~~~~~~~~~~~~~~~~~~~~'
+#         cd ../
+# 
+#         cd you_get/
+#         ls
+#         pwd
+#         
+#     - uses: actions/upload-artifact@v2
+#       with:
+#         name: quantum videos
+#         path: /home/runner/work/Working-of-an-acid-buffer/you_get/
 
