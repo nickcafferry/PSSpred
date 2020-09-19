@@ -23,8 +23,8 @@ jobs:
          git config --global user.name "nickcafferry"
          git init
          ls
-         cd videos/
-         git rm -rf *
+         
+         git rm -rf videos
          git commit -m "delete some irrelevant materials"
          git push origin master
 #         cd src/
