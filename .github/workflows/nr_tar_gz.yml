@@ -40,5 +40,17 @@ jobs:
          cd ../
          cd PSSpred_v4/
          ./PSSpred.pl seq.fasta
+         cp seq.dat /home/runner/work/PSSpred/output/
+         cp seq.dat.ss /home/runner/work/PSSpred/output/
+         cp blast.out /home/runner/work/PSSpred/output/
+         cd /home/runner/work/PSSpred/output/
+         ls
          pwd
+         
+    - uses: actions/upload-artifact@v2
+      with:
+        name: output results
+        path: /home/runner/work/PSSpred/output/       
+         
+         
 
