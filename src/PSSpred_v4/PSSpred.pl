@@ -29,7 +29,7 @@ use Cwd 'abs_path';
 ################################################################
 
 ###### you only need to change directory settings in following line #######
-$db="/home/runner/work/PSSpred/PSSpred/src/nr/nr"; #where NR sequence database is
+$db="/home/runner/work/PSSpred/PSSpred/src/nr/nr/nr"; #where NR sequence database is
 ##############################################################################
 
 
