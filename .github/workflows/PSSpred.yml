@@ -26,7 +26,7 @@ jobs:
          mkdir src
          cd src/
          wget https://zhanglab.ccmb.med.umich.edu/PSSpred/PSSpred_v4.tar.bz2
-         tar PSSpred_v4.tar.bz2
+         tar -jxvf PSSpred_v4.tar.bz2
          ls
          git add -A
          git commit -m "add PSSred"
