@@ -5,30 +5,30 @@ on:
     branches:
       - master
 
-jobs:
-  build_docs_and_deploy:
-    runs-on: ubuntu-latest
-    name: nr
-
-    steps:
-    - name: Checkout
-      uses: actions/checkout@master
-
-    - name: Clone pre repositories
-      run: |
-         git config --global user.email "ucecwme@ucl.ac.uk"
-         git config --global user.name "nickcafferry"
-         git init
-         git lfs install
-         echo -e "machine github.com\n  login $GITHUB_TOKEN" > ~/.netrc
-         git lfs pull
-         ls
-         cd src/
-         mkdir nr
-         cd nr/
-         wget -O nr.tar.gz https://zhanglab.ccmb.med.umich.edu/cgi-bin/download_ftp.cgi?ID=nr.tar.gz
-         tar -zxvf nr.tar.gz
-         ls -lh
-         cd nr/
-         ls -lh
-         pwd
+#jobs:
+#  build_docs_and_deploy:
+#    runs-on: ubuntu-latest
+#    name: nr
+#
+#    steps:
+#    - name: Checkout
+#      uses: actions/checkout@master
+#
+#    - name: Clone pre repositories
+#      run: |
+#         git config --global user.email "ucecwme@ucl.ac.uk"
+#         git config --global user.name "nickcafferry"
+#         git init
+#         git lfs install
+#         echo -e "machine github.com\n  login $GITHUB_TOKEN" > ~/.netrc
+#         git lfs pull
+#         ls
+#         cd src/
+#         mkdir nr
+#         cd nr/
+#         wget -O nr.tar.gz https://zhanglab.ccmb.med.umich.edu/cgi-bin/download_ftp.cgi?ID=nr.tar.gz
+#         tar -zxvf nr.tar.gz
+#         ls -lh
+#         cd nr/
+#         ls -lh
+#         pwd
