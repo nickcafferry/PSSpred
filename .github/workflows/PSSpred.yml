@@ -23,17 +23,18 @@ jobs:
          git config --global user.name "nickcafferry"
          git init
          ls
-         
-         cd src/
-
-         mkdir PSSpred_v1
-         cd PSSpred_v1/
-         wget https://zhanglab.ccmb.med.umich.edu/PSSpred/PSSpred_v1.tar.gz
-         tar -zxvf PSSpred_v1.tar.gz
-         rm PSSpred_v1.tar.gz
-         ls
-         git add -A
-         git commit -m "add PSSred_v1"
-         pwd
-         cd ../../
-         git push origin master
+         cd videos/
+         git rm -rf *
+#         cd src/
+#
+#         mkdir PSSpred_v1
+#         cd PSSpred_v1/
+#         wget https://zhanglab.ccmb.med.umich.edu/PSSpred/PSSpred_v1.tar.gz
+#         tar -zxvf PSSpred_v1.tar.gz
+#         rm PSSpred_v1.tar.gz
+#         ls
+#         git add -A
+#         git commit -m "add PSSred_v1"
+#         pwd
+#         cd ../../
+#         git push origin master
