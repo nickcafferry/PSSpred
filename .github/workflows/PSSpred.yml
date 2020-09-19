@@ -25,11 +25,13 @@ jobs:
          ls
          
          cd src/
+         mkdir PSSpred_V3
+         cd PSSpred_V3/
          wget https://zhanglab.ccmb.med.umich.edu/PSSpred/PSSpred_v3.tar.gz
          tar -zxvf PSSpred_v3.tar.gz
          ls
          git add -A
          git commit -m "add PSSred_v3"
          pwd
-         cd ../
+         cd ../../
          git push origin master
