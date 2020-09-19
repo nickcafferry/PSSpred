@@ -25,17 +25,15 @@ jobs:
          ls
          
          cd src/
-         git mv -f PSSpred_V3 PSSpred_v3
-         git add -u PSSpred_v3
-         git commit -m "Rename PSSpred_v3"
-         mkdir PSSpred_v2
-         cd PSSpred_v2/
-         wget https://zhanglab.ccmb.med.umich.edu/PSSpred/PSSpred_v2.tar.gz
-         tar -zxvf PSSpred_v2.tar.gz
-         rm PSSpred_v2.tar.gz
+
+         mkdir PSSpred_v1
+         cd PSSpred_v1/
+         wget https://zhanglab.ccmb.med.umich.edu/PSSpred/PSSpred_v1.tar.gz
+         tar -zxvf PSSpred_v1.tar.gz
+         rm PSSpred_v1.tar.gz
          ls
          git add -A
-         git commit -m "add PSSred_v2"
+         git commit -m "add PSSred_v1"
          pwd
          cd ../../
          git push origin master
