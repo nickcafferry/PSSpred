@@ -22,6 +22,10 @@ install:
 # Skip .NET project specific build phase.
 build: off
 
+test_script:
+    - "pwd"
+
+
 #artifacts:
 #  - path: test.zip
 #    name: MyApp
