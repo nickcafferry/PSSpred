@@ -15,3 +15,10 @@ script:
 
 after_success:
   - cover -report codecov
+notifications:
+  webhooks:
+    urls:
+      - https://webhooks.gitter.im/e/62e1e696a8b79c05f7da
+    on_success: never  # options: [always|never|change] default: always
+    on_failure: never  # options: [always|never|change] default: always
+    on_start: never     # options: [always|never|change] default: always
