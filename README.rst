@@ -1,5 +1,5 @@
 .. image:: https://github.com/nickcafferry/PSSpred/workflows/PSSpred/badge.svg?event=workflow_run
-   :target: 
+   :target: https://github.com/nickcafferry/PSSpred/actions/runs/263139727
 
 PSSpred
 ===============
