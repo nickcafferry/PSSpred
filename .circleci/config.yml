@@ -23,93 +23,93 @@ jobs:
      
       - store_artifacts:
           path: src/PSSpred_v4/seq.dat
-          destination: circleci-docs
+          destination: seq.dat
           
       - store_artifacts:
           path: src/PSSpred_v4/seq.dat.ss
-          destination: circleci-docs
+          destination: seq.dat.ss
        
       - store_artifacts:
           path: src/PSSpred_v4/protein.fasta
-          destination: circleci-docs
+          destination: protein.fasta
           
       - store_artifacts:
           path: src/PSSpred_v4/seq.fasta
-          destination: circleci-docs
+          destination: seq.fasta
  
       - store_artifacts:
           path: src/PSSpred_v4/blast.out
-          destination: circleci-docs
+          destination: blast.out
 
       - store_artifacts:
           path: src/PSSpred_v4/psitmp.aux 
-          destination: circleci-docs
+          destination: psitmp.aux
           
       - store_artifacts:
           path: src/PSSpred_v4/pssm.txt
-          destination: circleci-docs
+          destination: pssm.txt
 
       - store_artifacts:
           path: src/PSSpred_v4/psitmp.chk
-          destination: circleci-docs
+          destination: psitmp.chk
     
       - store_artifacts:
           path: src/PSSpred_v4/psitmp.fasta
-          destination: circleci-docs
+          destination: psitmp.fasta
           
       - store_artifacts:
           path: src/PSSpred_v4/psitmp.mn
-          destination: circleci-docs
+          destination: psitmp.mn
           
       - store_artifacts:
           path: src/PSSpred_v4/psitmp.mtx
-          destination: circleci-docs
+          destination: psitmp.mtx
   
       - store_artifacts:
           path: src/PSSpred_v4/psitmp.pn
-          destination: circleci-docs
+          destination: psitmp.pn
   
       - store_artifacts:
           path: src/PSSpred_v4/freqccw 
-          destination: circleci-docs
+          destination: freqccw 
           
   
       - store_artifacts:
           path: src/PSSpred_v4/freqccwG 
-          destination: circleci-docs
+          destination: freqccwG
        
       - store_artifacts:
           path: src/PSSpred_v4/mtx
-          destination: circleci-docs
+          destination: mtx
           
       - store_artifacts:
           path: src/PSSpred_v4/profw
-          destination: circleci-docs
+          destination: profw
           
       - store_artifacts:
           path: src/PSSpred_v4/output1.ss
-          destination: circleci-docs
+          destination: output1.ss
           
       - store_artifacts:
           path: src/PSSpred_v4/output2.ss
-          destination: circleci-docs
+          destination: output2.ss
          
       - store_artifacts:
           path: src/PSSpred_v4/output3.ss
-          destination: circleci-docs
+          destination: output3.ss
           
       - store_artifacts:
           path: src/PSSpred_v4/output4.ss
-          destination: circleci-docs
+          destination: output4.ss
           
       - store_artifacts:
           path: src/PSSpred_v4/output5.ss
-          destination: circleci-docs
+          destination: output5.ss
          
       - store_artifacts:
           path: src/PSSpred_v4/output6.ss
-          destination: circleci-docs
+          destination: output6.ss
           
       - store_artifacts:
           path: src/PSSpred_v4/output7.ss
-          destination: circleci-docs
+          destination: output7.ss
