@@ -1,3 +1,5 @@
+version: 2
+
 jobs:
   build: # name of your job
     machine: # executor type
