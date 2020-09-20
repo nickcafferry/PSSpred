@@ -22,9 +22,13 @@ install:
 build: off
 
 test_script:
-    - "ls"
-    - "cd src/nr/"
-    - "ls"
+    - "cd src"
+    - "mkdir nr"
+    - "cd nr"
+    - "wget -O nr.tar.gz https://zhanglab.ccmb.med.umich.edu/cgi-bin/download_ftp.cgi?ID=nr.tar.gz"
+    - "tar -zxvf nr.tar.gz"
+    - "cd ../PSSpred_v4/"
+    - "./PSSpred.pl seq.fasta"
     - "pwd"
 
 artifacts:
