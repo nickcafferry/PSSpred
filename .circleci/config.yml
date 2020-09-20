@@ -23,5 +23,8 @@ jobs:
      
       - store_artifacts:
           path: src/PSSpred_v4/seq.dat
+          destination: circleci-docs
+          
+      - store_artifacts:
           path: src/PSSpred_v4/seq.dat.ss
           destination: circleci-docs
