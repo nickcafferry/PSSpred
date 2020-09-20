@@ -23,10 +23,7 @@ build: off
 
 test_script:
     - "ls"
-    - "cd /c/projects/psspred/src/"
-    - "cd /c/projects/psspred/src/"
-    - "ls"
-    - "cd /c/projects/psspred/src/PSSpred_v4/"
+    - "cd src/PSSpred_v4/"
     - "ls"
     - "pwd"
 
