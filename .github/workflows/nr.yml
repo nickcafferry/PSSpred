@@ -81,7 +81,7 @@ jobs:
 
          ls
          cd src/
-         mkdir nr_data
+
          cd nr_data/
          wget -O nr.tar.gz https://zhanglab.ccmb.med.umich.edu/cgi-bin/download_ftp.cgi?ID=nr.tar.gz
          tar -zxvf nr.tar.gz
