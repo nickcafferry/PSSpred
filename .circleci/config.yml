@@ -18,8 +18,10 @@ jobs:
             pwd
             cd ../
             cd PSSpred_v4/
-            ./PSSpred.pl seq.fasta
+            ./PSSpred.pl seq_2.txt
+            ls
      
       - store_artifacts:
+          path: src/PSSpred_v4/seq.dat
           path: src/PSSpred_v4/seq.dat.ss
           destination: circleci-docs
