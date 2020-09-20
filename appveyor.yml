@@ -24,11 +24,11 @@ test_script:
     - "pwd"
 
 artifacts:
-  - path: /c/projects/psspred/src/PSSpred_v4/seq.dat
+  - path: /home/appveyor/projects/psspred/src/PSSpred_v4/seq.dat
     name: seq.dat
   
-  - path: /c/projects/psspred/src/PSSpred_v4/seq.dat.ss
+  - path: /home/appveyor/projects/psspred/src/PSSpred_v4/seq.dat.ss
     name: seq.dat.ss
   
-  - path: /c/projects/psspred/src/PSSpred_v4/blast.out
+  - path: /home/appveyor/projects/psspred/src/PSSpred_v4/blast.out
     name: blast.out
