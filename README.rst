@@ -36,13 +36,13 @@ Download
 
 To get the git version do
 
-::
+.. code:: sh
    
    $ git clone https://github.com/nickcafferry/PSSpred.git
    
 Or simply download the repository using the official Github CLI
 
-:: 
+.. code:: sh
 
    $ gh repo clone nickcafferry/PSSpred
 
