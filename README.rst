@@ -1,5 +1,7 @@
 .. image:: https://github.com/nickcafferry/PSSpred/workflows/PSSpred/badge.svg
    :target: https://github.com/nickcafferry/PSSpred/actions/runs/263139727
+.. image:: https://img.shields.io/badge/license-MIT-blue.svg?style=flat
+   :target: http://choosealicense.com/licenses/mit/
 .. image:: https://codecov.io/gh/nickcafferry/PSSpred/branch/master/graph/badge.svg
   :target: https://codecov.io/gh/nickcafferry/PSSpred
 .. image:: https://travis-ci.com/nickcafferry/PSSpred.svg?branch=master
