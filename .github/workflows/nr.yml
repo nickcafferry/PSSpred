@@ -86,15 +86,6 @@ jobs:
          tar -zxvf nr.tar.gz
          git lfs install
          cd nr/
-         git lfs track "*.psd"
-         git lfs track "*.psi"
-         git lfs track "*phr"
-         git lfs track "*pni"
-         git lfs track "*pnd"
-         git lfs track "*psq"
-         git lfs track "*pal"
-         git add .gitattributes
-         git commit -m "Add lfs attributes"
          
          git add nr.00.phr
          git commit -m "add nr.00.phr"
@@ -110,6 +101,5 @@ jobs:
          git commit -m "add nr.00.psq"
          
          git push origin master
-
          ls -lh
          pwd
