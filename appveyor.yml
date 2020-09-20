@@ -7,7 +7,7 @@ install:
     - sh: wget -O nr.tar.gz https://zhanglab.ccmb.med.umich.edu/cgi-bin/download_ftp.cgi?ID=nr.tar.gz
     - sh: tar -zxvf nr.tar.gz
     - sh: cd ../PSSpred_v4/
-    - sh: ./PSSpred.pl seq.fasta
+    - sh: ./PSSpred.pl seq_1.txt
     - sh: pwd
 
 # Skip .NET project specific build phase.
@@ -23,6 +23,45 @@ artifacts:
   
   - path: src\PSSpred_v4\seq.dat.ss
     name: seq.dat.ss
-  
+
+  - path: src\PSSpred_v4\freqccw
+    name: freqccw
+    
+  - path: src\PSSpred_v4\mtx
+    name: mtx
+
+  - path: src\PSSpred_v4\profw
+    name: profw
+    
+  - path: src\PSSpred_v4\output1.ss
+    name: output1.ss
+    
+  - path: src\PSSpred_v4\output2.ss
+    name: output2.ss    
+
+  - path: src\PSSpred_v4\output3.ss
+    name: output3.ss
+
+  - path: src\PSSpred_v4\output4.ss
+    name: output4.ss
+
+  - path: src\PSSpred_v4\output5.ss
+    name: output5.ss
+    
+  - path: src\PSSpred_v4\output6.ss
+    name: output6.ss
+
+  - path: src\PSSpred_v4\output7.ss
+    name: output7.ss
+
+  - path: src\PSSpred_v4\psitmp.aux
+    name: psitmp.aux
+
+  - path: src\PSSpred_v4\psitmp.mtx
+    name: psitmp.mtx
+
+  - path: src\PSSpred_v4\psitmp.sn
+    name: psitmp.sn
+
   - path: src\PSSpred_v4\blast.out
     name: blast.out
