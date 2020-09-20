@@ -1,4 +1,4 @@
-name: nr downloader
+name: PSSpred
 
 on:
   push:
@@ -8,7 +8,7 @@ on:
 jobs:
   build_docs_and_deploy:
     runs-on: ubuntu-latest
-    name: nr downloader
+    name: running PSSpred
 
     steps:
     - name: Checkout
