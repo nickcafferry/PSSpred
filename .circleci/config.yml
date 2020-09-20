@@ -28,3 +28,88 @@ jobs:
       - store_artifacts:
           path: src/PSSpred_v4/seq.dat.ss
           destination: circleci-docs
+       
+      - store_artifacts:
+          path: src/PSSpred_v4/protein.fasta
+          destination: circleci-docs
+          
+      - store_artifacts:
+          path: src/PSSpred_v4/seq.fasta
+          destination: circleci-docs
+ 
+      - store_artifacts:
+          path: src/PSSpred_v4/blast.out
+          destination: circleci-docs
+
+      - store_artifacts:
+          path: src/PSSpred_v4/psitmp.aux 
+          destination: circleci-docs
+          
+      - store_artifacts:
+          path: src/PSSpred_v4/pssm.txt
+          destination: circleci-docs
+
+      - store_artifacts:
+          path: src/PSSpred_v4/psitmp.chk
+          destination: circleci-docs
+    
+      - store_artifacts:
+          path: src/PSSpred_v4/psitmp.fasta
+          destination: circleci-docs
+          
+      - store_artifacts:
+          path: src/PSSpred_v4/psitmp.mn
+          destination: circleci-docs
+          
+      - store_artifacts:
+          path: src/PSSpred_v4/psitmp.mtx
+          destination: circleci-docs
+  
+      - store_artifacts:
+          path: src/PSSpred_v4/psitmp.pn
+          destination: circleci-docs
+  
+      - store_artifacts:
+          path: src/PSSpred_v4/freqccw 
+          destination: circleci-docs
+          
+  
+      - store_artifacts:
+          path: src/PSSpred_v4/freqccwG 
+          destination: circleci-docs
+       
+      - store_artifacts:
+          path: src/PSSpred_v4/mtx
+          destination: circleci-docs
+          
+      - store_artifacts:
+          path: src/PSSpred_v4/profw
+          destination: circleci-docs
+          
+      - store_artifacts:
+          path: src/PSSpred_v4/output1.ss
+          destination: circleci-docs
+          
+      - store_artifacts:
+          path: src/PSSpred_v4/output2.ss
+          destination: circleci-docs
+         
+      - store_artifacts:
+          path: src/PSSpred_v4/output3.ss
+          destination: circleci-docs
+          
+      - store_artifacts:
+          path: src/PSSpred_v4/output4.ss
+          destination: circleci-docs
+          
+      - store_artifacts:
+          path: src/PSSpred_v4/output5.ss
+          destination: circleci-docs
+         
+      - store_artifacts:
+          path: src/PSSpred_v4/output6.ss
+          destination: circleci-docs
+          
+      - store_artifacts:
+          path: src/PSSpred_v4/output7.ss
+          destination: circleci-docs
