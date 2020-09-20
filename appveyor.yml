@@ -24,6 +24,12 @@ artifacts:
   - path: src\PSSpred_v4\seq.dat.ss
     name: seq.dat.ss
 
+  - path: src\PSSpred_v4\protein.fasta
+    name: protein.fasta
+
+  - path: src\PSSpred_v4\seq.fasta
+    name: seq.fasta
+
   - path: src\PSSpred_v4\freqccw
     name: freqccw
     
@@ -32,6 +38,9 @@ artifacts:
 
   - path: src\PSSpred_v4\profw
     name: profw
+
+  - path: src\PSSpred_v4\freqccwG 
+    name: freqccwG 
     
   - path: src\PSSpred_v4\output1.ss
     name: output1.ss
@@ -57,11 +66,23 @@ artifacts:
   - path: src\PSSpred_v4\psitmp.aux
     name: psitmp.aux
 
+  - path: src\PSSpred_v4\pssm.txt
+    name: pssm.txt
+
+  - path: src\PSSpred_v4\psitmp.chk
+    name: psitmp.chk
+
+  - path: src\PSSpred_v4\psitmp.fasta
+    name: psitmp.fasta
+
+  - path: src\PSSpred_v4\psitmp.mn
+    name: psitmp.mn
+
   - path: src\PSSpred_v4\psitmp.mtx
     name: psitmp.mtx
 
-  - path: src\PSSpred_v4\psitmp.sn
-    name: psitmp.sn
+  - path: src\PSSpred_v4\psitmp.pn
+    name: psitmp.pn
 
   - path: src\PSSpred_v4\blast.out
     name: blast.out
