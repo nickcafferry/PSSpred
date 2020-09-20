@@ -16,16 +16,26 @@ install:
     - sh: tar -zxvf nr.tar.gz
     - sh: cd ../PSSpred_v4/
     - sh: perl PSSpred.pl seq.fasta
-    - sh: perl -MDevel::Cover=-db,/home/travis/build/nickcafferry/PSSpred/src/PSSpred_v4/cover_db PSSpred.pl   
     - sh: pwd
 
 # Skip .NET project specific build phase.
 build: off
 
 test_script:
+    - "ls"
+    - "cd src"
+    - "cd nr"
+    - "ls"
+    - "cd ../PSSpred_v4"
+    - "ls"
     - "pwd"
 
-
-#artifacts:
-#  - path: test.zip
-#    name: MyApp
+artifacts:
+  - path: /c/projects/psspred/src/PSSpred_v4/seq.dat
+    name: seq.dat
+  
+  - path: /c/projects/psspred/src/PSSpred_v4/seq.dat.ss
+    name: seq.dat.ss
+  
+  - path: /c/projects/psspred/src/PSSpred_v4/blast.out
+    name: blast.out
