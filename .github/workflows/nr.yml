@@ -56,7 +56,6 @@
 #         git add nr.psd
 #         git commit -m "add nr.psd"
 #         git push origin master
-
 name: nr
 
 on:
@@ -87,13 +86,29 @@ jobs:
          tar -zxvf nr.tar.gz
          git lfs install
          cd nr/
-         git lfs track "nr"
+         git lfs track "*.psd"
+         git lfs track "*.psi"
+         git lfs track "*phr"
+         git lfs track "*pni"
+         git lfs track "*pnd"
+         git lfs track "*psq"
+         git lfs track "*pal"
          git add .gitattributes
          git commit -m "Add lfs attributes"
-         git push origin master
          
-         git add nr
-         git commit -m "add nr"
+         git add nr.00.phr
+         git commit -m "add nr.00.phr"
+         git add nr.00.pin
+         git commit -m "add nr.00.pin"
+         git add nr.00.pnd
+         git commit -m "add nr.00.pnd"
+         git add nr.00.pni
+         git commit -m "add nr.00.pni"
+         git add nr.00.psi
+         git commit -m "add nr.00.psi"
+         git add nr.00.psq
+         git commit -m "add nr.00.psq"
+         
          git push origin master
 
          ls -lh
