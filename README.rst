@@ -1,7 +1,7 @@
 PSSpred
 ===============
 
-|Workflow| |Licence| |Travis| |Codecov| |Gitter|
+|Workflow| |Licence| |Travis| |Codecov| |Appveyor| |Gitter|
 
 .. |Workflow| image:: https://github.com/nickcafferry/PSSpred/workflows/PSSpred/badge.svg
    :target: https://github.com/nickcafferry/PSSpred/actions/runs/263139727
@@ -13,7 +13,10 @@ PSSpred
    :target: https://travis-ci.com/nickcafferry/PSSpred
     
 .. |Codecov| image:: https://codecov.io/gh/nickcafferry/PSSpred/branch/master/graph/badge.svg
-  :target: https://codecov.io/gh/nickcafferry/PSSpred
+   :target: https://codecov.io/gh/nickcafferry/PSSpred
+
+.. |Appveyor| image:: https://ci.appveyor.com/api/projects/status/j5e243jmixcnqpy2?svg=true
+   :target: https://ci.appveyor.com/project/nickcafferry/psspred)
 
 .. |Gitter| image:: https://badges.gitter.im/PSSpred/community.svg
    :target: https://gitter.im/PSSpred/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge
