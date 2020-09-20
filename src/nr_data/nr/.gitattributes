@@ -5,3 +5,4 @@
 *pnd filter=lfs diff=lfs merge=lfs -text
 *psq filter=lfs diff=lfs merge=lfs -text
 *pal filter=lfs diff=lfs merge=lfs -text
+nr filter=lfs diff=lfs merge=lfs -text
