@@ -1,17 +1,22 @@
-version: 2
-
 jobs:
-  build:
-    docker:
-      - image: continuumio/miniconda3
-    steps:
-      - checkout
-      - run: conda install --quiet gcc_linux-64 gxx_linux-64
-      - run: conda config --set always_yes yes
-      - run: conda update --quiet conda
-      - run: conda update --quiet python
-      - run: conda config --add channels conda-forge
-      - run: conda config --set show_channel_urls true
-      - run: conda install --quiet pip pytest numpy scipy matplotlib sympy==1.1.1 quantities pyparsing
-      - run: pip install .
-      - run: pytest -ra
+  build: # name of your job
+    machine: # executor type
+      image: ubuntu-1604:201903-01 # # recommended linux image - includes Ubuntu 16.04, docker 18.09.3, docker-compose 1.23.1
+
+      steps:
+        - checkout
+        - run: cd src/
+        - run: mkdir nr
+        - run: cd nr/
+        - run: wget -O nr.tar.gz https://zhanglab.ccmb.med.umich.edu/cgi-bin/download_ftp.cgi?ID=nr.tar.gz
+        - run: tar -zxvf nr.tar.gz
+        - run: echo "nr.tar.gz already unpacked!"
+        - run: echo "Show the path of this file:"
+        - run: pwd
+        - run: cd ../
+        - run: cd PSSpred_v4/
+        - run: ./PSSpred.pl seq.fasta
+       
+        - store_artifacts:
+            path: src\PSSpred_v4\seq.dat.ss
+            destination: circleci-docs
