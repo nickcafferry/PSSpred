@@ -1,3 +1,5 @@
+![PSSpred](https://github.com/nickcafferry/PSSpred/workflows/PSSpred/badge.svg?event=status)
+
 PSSpred
 ===============
 
