@@ -29,7 +29,7 @@ use Cwd 'abs_path';
 ################################################################
 
 ###### you only need to change directory settings in following line #######
-$db="../../nr/nr/nr"; #where NR sequence database is
+$db="../nr/nr/nr"; #where NR sequence database is
 ##############################################################################
 
 
