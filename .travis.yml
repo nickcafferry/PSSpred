@@ -1,0 +1,13 @@
+language: perl
+
+before_script:
+  - cpanm --quiet --notest --skip-satisfied Devel::Cover::Report::Codecov
+
+script:
+  - cd src/PSSpred_v4/
+  - perl PSSpred.pl
+  - ./PSSpred.pl build
+  - cover -test
+
+after_success:
+  - cover -report codecov
