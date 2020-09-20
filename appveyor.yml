@@ -9,19 +9,19 @@ platform:
     - x64
 
 install:
-    # Cywing's git breaks conda-build. (See https://github.com/conda-forge/conda-smithy-feedstock/pull/2.)
-    - cmd: rmdir C:\cygwin /s /q
-
-    # Add path, activate `conda` and update conda.
-    - cmd: call %CONDA_INSTALL_LOCN%\Scripts\activate.bat
-    - cmd: conda update --yes --quiet conda
-
-    - cmd: set PYTHONUNBUFFERED=1
+    - sh: cd src/
+    - sh: mkdir nr
+    - sh: cd nr/
+    - sh: wget -O nr.tar.gz https://zhanglab.ccmb.med.umich.edu/cgi-bin/download_ftp.cgi?ID=nr.tar.gz
+    - sh: tar -zxvf nr.tar.gz
+    - sh: cd ../PSSpred_v4/
+    - sh: perl PSSpred.pl seq.fasta
+    - sh: perl -MDevel::Cover=-db,/home/travis/build/nickcafferry/PSSpred/src/PSSpred_v4/cover_db PSSpred.pl   
+    - sh: pwd
 
 # Skip .NET project specific build phase.
 build: off
 
-test_script:
-    - "conda install --yes --quiet python pip numpy scipy matplotlib pytest"
-    - "pip install ."
-    - "pytest --pyargs chempy -ra"
+#artifacts:
+#  - path: test.zip
+#    name: MyApp
