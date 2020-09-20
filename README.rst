@@ -1,7 +1,7 @@
 PSSpred
 ===============
 
-|Workflow| |Licence| |Travis| |Codecov| |Appveyor| |Gitter|
+|Workflow| |Licence| |Travis| |Codecov| |Appveyor| |Gitter| |Circleci|
 
 .. |Workflow| image:: https://github.com/nickcafferry/PSSpred/workflows/PSSpred/badge.svg
    :target: https://github.com/nickcafferry/PSSpred/actions/runs/263139727
@@ -20,7 +20,9 @@ PSSpred
 
 .. |Gitter| image:: https://badges.gitter.im/PSSpred/community.svg
    :target: https://gitter.im/PSSpred/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge
-   
+
+.. |Circleci| image:: https://circleci.com/gh/nickcafferry/PSSpred.svg?style=svg
+   :target: https://circleci.com/gh/nickcafferry/PSSpred
 
 A simple neural network training algorithm for accurate protein secondary structure prediction.
 
