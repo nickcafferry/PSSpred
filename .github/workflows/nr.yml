@@ -5,30 +5,90 @@ on:
     branches:
       - master
 
-#jobs:
-#  build_docs_and_deploy:
-#    runs-on: ubuntu-latest
-#    name: nr
-#
-#    steps:
-#    - name: Checkout
-#      uses: actions/checkout@master
-#
-#    - name: Clone pre repositories
-#      run: |
-#         git config --global user.email "ucecwme@ucl.ac.uk"
-#         git config --global user.name "nickcafferry"
-#         git init
-#         git lfs install
-#         echo -e "machine github.com\n  login $GITHUB_TOKEN" > ~/.netrc
-#         git lfs pull
-#         ls
-#         cd src/
-#         mkdir nr
-#         cd nr/
-#         wget -O nr.tar.gz https://zhanglab.ccmb.med.umich.edu/cgi-bin/download_ftp.cgi?ID=nr.tar.gz
-#         tar -zxvf nr.tar.gz
-#         ls -lh
-#         cd nr/
-#         ls -lh
-#         pwd
+jobs:
+  build_docs_and_deploy:
+    runs-on: ubuntu-latest
+    name: nr
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: Clone pre repositories
+      run: |
+         git config --global user.email "ucecwme@ucl.ac.uk"
+         git config --global user.name "nickcafferry"
+         git init
+
+         ls
+         cd src/
+         mkdir nr_data
+         cd nr_data/
+         wget -O nr.tar.gz https://zhanglab.ccmb.med.umich.edu/cgi-bin/download_ftp.cgi?ID=nr.tar.gz
+         tar -zxvf nr.tar.gz
+         git lfs install
+         cd nr/
+         git lfs track "*.psd"
+         git lfs track "*.psi"
+         git lfs track "*phr"
+         git lfs track "*pni"
+         git lfs track "*pnd"
+         git lfs track "*psq"
+         git lfs track "*pal"
+         git add .gitattributes
+         git commit -m "Add lfs attributes"
+         git push origin master
+         
+         git add nr.01.phr
+         git commit -m "add nr.01.phr"
+         git add nr.01.pin
+         git commit -m "add nr.01.pin"
+         git add nr.01.pnd
+         git commit -m "add nr.01.pnd"
+         git add nr.01.pni
+         git commit -m "add nr.01.pni"
+         git add nr.01.psd
+         git commit -m "add nr.01.psd"
+         git add nr.01.psi
+         git commit -m "add nr.01.psi"
+         git add nr.01.psq
+         git commit -m "add nr.01.psq"
+         git add nr.02.phr
+         git commit -m "add nr.02.phr"
+         git add nr.02.pin
+         git commit -m "add nr.02.pin"
+         git add nr.02.pnd
+         git commit -m "add nr.02.pnd"
+         git add nr.02.pni
+         git commit -m "add nr.02.pni"
+         git add nr.02.psd
+         git commit -m "add nr.02.psd"
+         git add nr.02.psi
+         git commit -m "add nr.02.psi"
+         git add nr.02.psq
+         git commit -m "add nr.02.psq"
+         git add nr.03.phr
+         git commit -m "add nr.03.phr"
+         git add nr.03.pin
+         git commit -m "add nr.03.pin"
+         git add nr.03.pnd
+         git commit -m "add nr.03.pnd"
+         git add nr.03.pni
+         git commit -m "add nr.03.pni"
+         git add nr.03.psd
+         git commit -m "add nr.03.psd"
+         git add nr.03.psi
+         git commit -m "add nr.03.psi"
+         git add nr.03.psq
+         git commit -m "add nr.03.psq"
+         git add nr.pal
+         git commit -m "add nr.pal"
+         git add nr.psd
+         git commit -m "add nr.psd"
+         git push origin master
+         
+         
+         ls -lh
+         cd nr/
+         ls -lh
+         pwd
