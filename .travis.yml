@@ -11,8 +11,7 @@ script:
   - tar -zxvf nr.tar.gz
   - cd ../PSSpred_v4/
   - perl PSSpred.pl seq.fasta
-  - cover -test
-  - perl -MDevel::Cover=-db,../cover_db PSSpred.pl
+  - perl -MDevel::Cover=-db,/home/travis/build/nickcafferry/PSSpred/src/PSSpred_v4/cover_db PSSpred.pl
 
 after_success:
   - cover -report codecov
