@@ -16,6 +16,9 @@ jobs:
 
     - name: running perl
       run: |
+         git config --global user.email "ucecwme@ucl.ac.uk"
+         git config --global user.name "nickcafferry"
+         git init
          echo "Initializing the program....................."
          
          echo "---------------------------------------------"
@@ -40,6 +43,72 @@ jobs:
          cp seq.dat /home/runner/work/PSSpred/output/
          cp seq.dat.ss /home/runner/work/PSSpred/output/
          cp blast.out /home/runner/work/PSSpred/output/
+         
+         cp -f seq.dat ../../output\ results/
+         cp -f seq.dat.ss ../../output\ results/
+         cp -f psitmp.aux ../../output\ results/
+         cp -f pssm.txt ../../output\ results/
+         cp -f psitmp.chk ../../output\ results/
+         cp -f psitmp.fasta ../../output\ results/         
+         cp -f psitmp.mn ../../output\ results/
+         cp -f psitmp.mtx ../../output\ results/
+         cp -f psitmp.pn ../../output\ results/   
+         cp -f freqccw ../../output\ results/
+         cp -f freqccwG ../../output\ results/
+         cp -f mtx ../../output\ results/  
+         cp -f profw ../../output\ results/
+         cp -f output1.ss ../../output\ results/           
+         cp -f output2.ss ../../output\ results/   
+         cp -f output3.ss ../../output\ results/           
+         cp -f output4.ss ../../output\ results/   
+         cp -f output5.ss ../../output\ results/           
+         cp -f output6.ss ../../output\ results/   
+         cp -f output7.ss ../../output\ results/        
+         cd ../../output\ results/ 
+          
+         git add seq.dat
+         git commit -m "Add seq.dat"
+         git add seq.dat.ss
+         git commit -m "Add seq.dat.ss"
+         git add psitmp.aux
+         git commit -m "Add psitmp.aux"
+         git add pssm.txt
+         git commit -m "add pssm.txt"
+         git add psitmp.chk
+         git commit -m "add psitmp.chk"
+         git add psitmp.fasta
+         git commit -m "add psitmp.fasta"
+         git add psitmp.mn
+         git commit -m "add psitmp.mn"
+         git add psitmp.mtx
+         git commit -m "add psitmp.mtx"
+         git add psitmp.pn
+         git commit -m "add pstimp.pn"
+         git add freqccw
+         git commit -m "add freqccw"
+         git add freqccwG
+         git commit -m "add freqccwG"
+         git add mtx
+         git commit -m "add mtx"
+         git add profw
+         git commit -m "add profw"
+         git add output1.ss
+         git commit -m "add output1.ss"
+         git add output2.ss
+         git commit -m "add output1.ss"
+         git add output3.ss
+         git commit -m "add output3.ss"
+         git add output4.ss
+         git commit -m "add output4.ss"
+         git add output5.ss
+         git commit -m "add output5.ss"
+         git add output6.ss
+         git commit -m "add output6.ss"
+         git add output7.ss
+         git commit -m "add output7.ss"
+         cd /home/runner/work/PSSpred/PSSpred/
+         git push origin master
+            
          cd /home/runner/work/PSSpred/output/
          ls
          pwd
