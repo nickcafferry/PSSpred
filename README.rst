@@ -39,7 +39,7 @@ Simply fork this project and edit the file `seq.fasta` in `FASTA Format` in your
 
 .. image:: https://avatars3.githubusercontent.com/in/15368?s=64&v=4
    :target: https://github.com/features/actions
-   
+Github-Actions  
 .. code:: yaml
    
    name: PSSpred
