@@ -258,3 +258,8 @@ Contributing
 ------------
 
 This project welcomes contributions and suggestions. Most contributions require you to agree to a MIT LICENCE (MIT LIC) declaring that you have the right to, and actually do, grant us the rights to use your contribution. For details, visit `Code of Conduct <https://github.com/nickcafferry/PSSpred/blob/master/CODE_OF_CONDUCT.md>`_.
+
+Refrence
+--------
+
+Renxiang Yan, Dong Xu, Jianyi Yang, Sara Walker, Yang Zhang. A comparative assessment and analysis of 20 representative sequence alignment methods for protein structure prediction. Scientific Reports, 3: 2619 (2013). 
