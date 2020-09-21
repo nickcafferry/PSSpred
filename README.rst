@@ -30,11 +30,65 @@ PSSpred (Protein Secondary Structure prediction) is a simple neural network trai
 
 We have community chat at `Gitter <https://gitter.im/PSSpred/community#>`_. Feel free to ask us anything there. We have a very welcoming and helpful community.
 
-Install
+Installation
 -------
 
 No installation is needed! 
 
+Simply fork this project and edit the file `seq.fasta` in `FASTA Format` in your own repository, then you can acquire the outputs through `github worflow <https://github.com/nickcafferry/PSSpred/actions/runs/263139727>`_ , and download them via `artifacts link <https://github.com/nickcafferry/PSSpred/suites/1217285162/artifacts/18180747>`_. The output files contains two results, one for `seq.dat` (PSSpred prediction in I-TASSER format), one for `seq.dat.ss` (the original confidence file). If you want to check more results, you need to edit github workflow file `PSSPred.yml <>`
+
+.. code:: yaml
+   
+   name: PSSpred
+
+   on:
+     push:
+       branches:
+         - master
+   
+   jobs:
+     build_docs_and_deploy:
+       runs-on: ubuntu-latest
+       name: running PSSpred
+   
+       steps:
+       - name: Checkout
+         uses: actions/checkout@master
+   
+       - name: running perl
+         run: |
+            echo "Initializing the program....................."
+            
+            echo "---------------------------------------------"
+            cd ../
+            mkdir output
+            echo "output file already created!"
+            
+            echo "---------------------------------------------"
+            cd PSSpred/
+            cd src/
+            mkdir nr
+            cd nr/
+            wget -O nr.tar.gz https://zhanglab.ccmb.med.umich.edu/cgi-bin/download_ftp.cgi?ID=nr.tar.gz
+            tar -zxvf nr.tar.gz
+            echo "nr.tar.gz already unpacked!"
+            echo "Show the path of this file: "
+            pwd
+            
+            cd ../
+            cd PSSpred_v4/
+            ./PSSpred.pl seq.fasta
+            cp seq.dat /home/runner/work/PSSpred/output/
+            cp seq.dat.ss /home/runner/work/PSSpred/output/
+            cp blast.out /home/runner/work/PSSpred/output/
+            cd /home/runner/work/PSSpred/output/
+            ls
+            pwd
+            
+       - uses: actions/upload-artifact@v2
+         with:
+           name: output results
+           path: /home/runner/work/PSSpred/output/ 
 
 Download
 --------
