@@ -194,7 +194,7 @@ Or simply download the repository using the official Github CLI
 
    $ gh repo clone nickcafferry/PSSpred
 
-You can also click `here <https://zhanglab.ccmb.med.umich.edu/PSSpred/PSSpred_v4.tar.bz2>`_ to download PSSpred package version 4, and `v3 <https://zhanglab.ccmb.med.umich.edu/PSSpred/PSSpred_v3.tar.gz>`_, `v2 <https://zhanglab.ccmb.med.umich.edu/PSSpred/PSSpred_v2.tar.gz>`_, `v1 <https://zhanglab.ccmb.med.umich.edu/PSSpred/PSSpred_v1.tar.gz>`_.
+You can also click `here <https://zhanglab.ccmb.med.umich.edu/PSSpred/PSSpred_v4.tar.bz2>`_ to download PSSpred package version 4, and `v3 <https://zhanglab.ccmb.med.umich.edu/PSSpred/PSSpred_v3.tar.gz>`_, `v2 <https://zhanglab.ccmb.med.umich.edu/PSSpred/PSSpred_v2.tar.gz>`_, `v1 <https://zhanglab.ccmb.med.umich.edu/PSSpred/PSSpred_v1.tar.gz>`_. Also, you can download the whole package by clicking `source code.zip <https://github.com/nickcafferry/PSSpred/archive/Protein-Secondary-Structure-prediction.zip>`_ or `source code.tar.gz <https://github.com/nickcafferry/PSSpred/archive/Protein-Secondary-Structure-prediction.tar.gz>`_.
 
 
 Usage
@@ -215,7 +215,7 @@ Sequences are expected to be represented in the standard IUB/IUPAC amino acid an
 
 The nucleic acid codes are:
  
-.. code:: yaml
+.. code:: python
 
         A --> adenosine           M --> A C (amino)
         C --> cytidine            S --> G C (strong)
@@ -229,7 +229,7 @@ The nucleic acid codes are:
 
 The accepted amino acid codes are:
 
-.. code:: yaml
+.. code:: python
    
     A ALA alanine                         P PRO proline
     B ASX aspartate or asparagine         Q GLN glutamine
@@ -250,9 +250,9 @@ FASTA format
 
 FASTA format is a text-based format for representing either nucleotide sequences or peptide sequences, in which base pairs or amino acids are represented using single-letter codes. A sequence in FASTA format begins with a single-line description, followed by lines of sequence data. The description line is distinguished from the sequence data by a greater-than (">") symbol in the first column. It is recommended that all lines of text be shorter than 80 characters in length.
 
-An example sequence in FASTA format is::
+An example sequence in FASTA format is:
 
-.. code:: yaml
+.. code:: python
 
    >gi|186681228|ref|YP_001864424.1| phycoerythrobilin:ferredoxin oxidoreductase
    MNSERSDVTLYQPFLDYAIAYMRSRLDLEPYPIPTGFESNSAVVGKGKNQEEVVTTSYAFQTAKLRQIRA
