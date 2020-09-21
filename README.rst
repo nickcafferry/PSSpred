@@ -35,7 +35,7 @@ Installation
 
 No installation is needed! 
 
-Simply fork this project and edit the file ```seq.fasta``` in ```FASTA Format``` in your own repository, then you can acquire the outputs through `github worflow <https://github.com/nickcafferry/PSSpred/actions/runs/263139727>`_ , and download them via `artifacts link <https://github.com/nickcafferry/PSSpred/suites/1217285162/artifacts/18180747>`_. The output files contains two results, one for ```seq.dat``` (PSSpred prediction in I-TASSER format), one for ```seq.dat.ss``` (the original confidence file). If you want to check more results, you need to edit github workflow file `PSSPred.yml <https://github.com/nickcafferry/PSSpred/blob/master/.github/workflows/PSSPred.yml>`_:
+Simply fork this project and edit the file ```seq.fasta```(file path: src/PSSpred_v4/seq.fasta) in ```FASTA Format``` in your own repository, then you can acquire the outputs through `github worflow <https://github.com/nickcafferry/PSSpred/actions/runs/263139727>`_ in about 8 minutes, and download them via `artifacts link <https://github.com/nickcafferry/PSSpred/suites/1217285162/artifacts/18180747>`_. The output files contains two results, one for ```seq.dat``` (PSSpred prediction in I-TASSER format), one for ```seq.dat.ss``` (the original confidence file). If you want to check more results, you need to edit github workflow file `PSSPred.yml <https://github.com/nickcafferry/PSSpred/blob/master/.github/workflows/PSSPred.yml>`_:
 
 .. image:: https://avatars3.githubusercontent.com/in/15368?s=64&v=4
    :target: https://github.com/features/actions
@@ -94,6 +94,89 @@ Github-Actions
            name: output results
            path: /home/runner/work/PSSpred/output/ 
 
+Not familiar with ```FASTA format```? Don't panick, this project is very user-friendly. You can type the following protein sequence::
+   
+   MVLSEGEWQLVLHVWAKVEADVAGHGQDILIRLFKSHPETLEKFDRVKHLKTEAEMKASEDLKKHGVTVLTALGAILKKKGHHEAELKPLAQSHATKHKIPIKYLEFISEAIIHVLHSRHPGNFGADAQLELGAMNKAFRKDIAAKYKELGYQG
+
+in ```seq_1.txt``` simply, and upload to the directory (path: src/PSSpred_v4/). Wait for almost 8 minutes (check Appveyor build status: pending? failed? passing?), download the `output files <https://ci.appveyor.com/project/nickcafferry/psspred/builds/35307987/artifacts>`_ when the job is done.
+
+.. image:: https://avatars3.githubusercontent.com/ml/11?s=62&v=4
+   :target: https://www.appveyor.com/
+Appveyor
+
+.. code:: yaml
+   
+      image: Ubuntu
+      
+      install:
+          - sh: cd src/
+          - sh: mkdir nr
+          - sh: cd nr/
+          - sh: wget -O nr.tar.gz https://zhanglab.ccmb.med.umich.edu/cgi-bin/download_ftp.cgi?ID=nr.tar.gz
+          - sh: tar -zxvf nr.tar.gz
+          - sh: cd ../PSSpred_v4/
+          - sh: ./PSSpred.pl seq_1.txt
+          - sh: pwd
+      
+      # Skip project specific build phase.
+      build: off
+      
+      test_script:
+          - "ls"
+          - "pwd"
+      
+      artifacts:
+        - path: src\PSSpred_v4\seq.dat
+          name: seq.dat
+        
+        - path: src\PSSpred_v4\seq.dat.ss
+          name: seq.dat.ss
+      
+        - path: src\PSSpred_v4\protein.fasta
+          name: protein.fasta
+
+If you prefer to use CircleCI other than Appveyor, it is alright. Just edit the ```seq_2.txt``` (file path: src/PSSpred_v4/seq_2.txt) and commit. For example, you can use the following protein sequence and generatre the secondary structure prediction by your own. Also, change the ```./PSSpred.pl seq_2.txt``` to ```./PSSpred.pl XXX.txt``` if uploading input files with different file names, by editing the following ```config.yml``` file.
+
+.. image:: https://avatars3.githubusercontent.com/ml/7?s=62&v=4
+   :target: https://circleci.com/
+CircleCI(file path: .circleci/config.yml)
+
+.. code:: yaml
+   
+   version: 2
+
+   jobs:
+     build: # name of your job
+       machine: # executor type
+         image: ubuntu-1604:201903-01 # # recommended linux image - includes Ubuntu 16.04, docker 18.09.3, docker-compose 1.23.1
+   
+       steps:
+         - checkout
+         - run: |
+               cd src/
+               mkdir nr
+               cd nr/
+               wget -O nr.tar.gz https://zhanglab.ccmb.med.umich.edu/cgi-bin/download_ftp.cgi?ID=nr.tar.gz
+               tar -zxvf nr.tar.gz
+               echo "nr.tar.gz already unpacked!"
+               echo "Show the path of this file:"
+               pwd
+               cd ../
+               cd PSSpred_v4/
+               ./PSSpred.pl seq_2.txt
+               ls
+        
+         - store_artifacts:
+             path: src/PSSpred_v4/seq.dat
+             destination: seq.dat
+             
+         - store_artifacts:
+             path: src/PSSpred_v4/seq.dat.ss
+             destination: seq.dat.ss
+   
+         - store_artifacts:
+             path: src/PSSpred_v4/protein.fasta
+             destination: protein.fasta
 
 
 Download
@@ -111,5 +194,5 @@ Or simply download the repository using the official Github CLI
 
    $ gh repo clone nickcafferry/PSSpred
 
-You can also click `here <https://zhanglab.ccmb.med.umich.edu/PSSpred/PSSpred_v4.tar.bz2>`_ to download PSSpred package Version 4. 
+You can also click `here <https://zhanglab.ccmb.med.umich.edu/PSSpred/PSSpred_v4.tar.bz2>`_ to download PSSpred package Version 4, and `v3 <https://zhanglab.ccmb.med.umich.edu/PSSpred/PSSpred_v3.tar.gz>`_, `v2 <https://zhanglab.ccmb.med.umich.edu/PSSpred/PSSpred_v2.tar.gz>`_, `v1 <https://zhanglab.ccmb.med.umich.edu/PSSpred/PSSpred_v1.tar.gz>`_.
 
