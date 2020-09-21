@@ -40,6 +40,7 @@ Simply fork this project and edit the file ```seq.fasta``` (file path: src/PSSpr
 .. image:: https://avatars3.githubusercontent.com/in/15368?s=64&v=4
    :target: https://github.com/features/actions
 Github-Actions
+^^^^^^^^^^^^^
 
 .. code:: yaml
    
@@ -103,6 +104,7 @@ in ```seq_1.txt``` simply, and upload to the directory (path: src/PSSpred_v4/). 
 .. image:: https://avatars3.githubusercontent.com/ml/11?s=62&v=4
    :target: https://www.appveyor.com/
 Appveyor
+^^^^^^^^
 
 .. code:: yaml
    
@@ -140,6 +142,7 @@ If you prefer to use CircleCI other than Appveyor, it is alright. Just edit the 
 .. image:: https://avatars3.githubusercontent.com/ml/7?s=62&v=4
    :target: https://circleci.com/
 CircleCI(file path: .circleci/config.yml)
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. code:: yaml
    
