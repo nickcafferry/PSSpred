@@ -35,7 +35,7 @@ Installation
 
 No installation is needed! 
 
-Simply fork this project and edit the file ```seq.fasta```(file path: src/PSSpred_v4/seq.fasta) in ```FASTA Format``` in your own repository, then you can acquire the outputs through `github worflow <https://github.com/nickcafferry/PSSpred/actions/runs/263139727>`_ in about 8 minutes, and download them via `artifacts link <https://github.com/nickcafferry/PSSpred/suites/1217285162/artifacts/18180747>`_. The output files contains two results, one for ```seq.dat``` (PSSpred prediction in I-TASSER format), one for ```seq.dat.ss``` (the original confidence file). If you want to check more results, you need to edit github workflow file `PSSPred.yml <https://github.com/nickcafferry/PSSpred/blob/master/.github/workflows/PSSPred.yml>`_:
+Simply fork this project and edit the file ```seq.fasta``` (file path: src/PSSpred_v4/seq.fasta) in ```FASTA Format``` in your own repository, then you can acquire the outputs through `github worflow <https://github.com/nickcafferry/PSSpred/actions/runs/263139727>`_ in about 8 minutes, and download them via `artifacts link <https://github.com/nickcafferry/PSSpred/suites/1217285162/artifacts/18180747>`_. The output files contains two results, one for ```seq.dat```  (PSSpred prediction in I-TASSER format), one for ```seq.dat.ss```  (the original confidence file). If you want to check more results, you need to edit github workflow file `PSSPred.yml <https://github.com/nickcafferry/PSSpred/blob/master/.github/workflows/PSSPred.yml>`_:
 
 .. image:: https://avatars3.githubusercontent.com/in/15368?s=64&v=4
    :target: https://github.com/features/actions
@@ -94,7 +94,7 @@ Github-Actions
            name: output results
            path: /home/runner/work/PSSpred/output/ 
 
-Not familiar with ```FASTA format```? Don't panick, this project is very user-friendly. You can type the following protein sequence::
+Not familiar with ```FASTA format``` ? Don't panick, this project is very user-friendly. You can type the following protein sequence::
    
    MVLSEGEWQLVLHVWAKVEADVAGHGQDILIRLFKSHPETLEKFDRVKHLKTEAEMKASEDLKKHGVTVLTALGAILKKKGHHEAELKPLAQSHATKHKIPIKYLEFISEAIIHVLHSRHPGNFGADAQLELGAMNKAFRKDIAAKYKELGYQG
 
@@ -194,5 +194,67 @@ Or simply download the repository using the official Github CLI
 
    $ gh repo clone nickcafferry/PSSpred
 
-You can also click `here <https://zhanglab.ccmb.med.umich.edu/PSSpred/PSSpred_v4.tar.bz2>`_ to download PSSpred package Version 4, and `v3 <https://zhanglab.ccmb.med.umich.edu/PSSpred/PSSpred_v3.tar.gz>`_, `v2 <https://zhanglab.ccmb.med.umich.edu/PSSpred/PSSpred_v2.tar.gz>`_, `v1 <https://zhanglab.ccmb.med.umich.edu/PSSpred/PSSpred_v1.tar.gz>`_.
+You can also click `here <https://zhanglab.ccmb.med.umich.edu/PSSpred/PSSpred_v4.tar.bz2>`_ to download PSSpred package version 4, and `v3 <https://zhanglab.ccmb.med.umich.edu/PSSpred/PSSpred_v3.tar.gz>`_, `v2 <https://zhanglab.ccmb.med.umich.edu/PSSpred/PSSpred_v2.tar.gz>`_, `v1 <https://zhanglab.ccmb.med.umich.edu/PSSpred/PSSpred_v1.tar.gz>`_.
 
+
+Usage
+-----
+
+Simply edit the file ```seq.fasta```, or ```seq_1.txt``` or ```seq_2.txt```, or you can upload your own sequence file and change the workflow file (PSSPred.yml, appveyor.yml, config.yml) correspondinlgy. 
+
+About Protein Sequence
+^^^^^^^^^^^^^^^^^^^^^^
+
+Sequences are expected to be represented in the standard IUB/IUPAC amino acid and nucleic acid codes, with these exceptions:
+
+- lower-case letters are accepted and are mapped into upper-case;
+- a single hyphen or dash can be used to represent a gap of indeterminate length;
+- in amino acid sequences, U and * are acceptable letters (see below).
+- any numerical digits in the query sequence should either be removed or replaced by appropriate letter codes (e.g., N for unknown nucleic acid residue or X for unknown amino acid residue).
+
+
+The nucleic acid codes are::
+   
+        A --> adenosine           M --> A C (amino)
+        C --> cytidine            S --> G C (strong)
+        G --> guanine             W --> A T (weak)
+        T --> thymidine           B --> G T C
+        U --> uridine             D --> G A T
+        R --> G A (purine)        H --> A C T
+        Y --> T C (pyrimidine)    V --> G C A
+        K --> G T (keto)          N --> A G C T (any)
+                                    -  gap of indeterminate length
+
+The accepted amino acid codes are::
+   
+    A ALA alanine                         P PRO proline
+    B ASX aspartate or asparagine         Q GLN glutamine
+    C CYS cystine                         R ARG arginine
+    D ASP aspartate                       S SER serine
+    E GLU glutamate                       T THR threonine
+    F PHE phenylalanine                   U     selenocysteine
+    G GLY glycine                         V VAL valine
+    H HIS histidine                       W TRP tryptophan
+    I ILE isoleucine                      Y TYR tyrosine
+    K LYS lysine                          Z GLX glutamate or glutamine
+    L LEU leucine                         X     any
+    M MET methionine                      *     translation stop
+    N ASN asparagine                      -     gap of indeterminate length
+    
+FASTA format
+------------
+
+FASTA format is a text-based format for representing either nucleotide sequences or peptide sequences, in which base pairs or amino acids are represented using single-letter codes. A sequence in FASTA format begins with a single-line description, followed by lines of sequence data. The description line is distinguished from the sequence data by a greater-than (">") symbol in the first column. It is recommended that all lines of text be shorter than 80 characters in length.
+
+An example sequence in FASTA format is::
+   
+   >gi|186681228|ref|YP_001864424.1| phycoerythrobilin:ferredoxin oxidoreductase
+   MNSERSDVTLYQPFLDYAIAYMRSRLDLEPYPIPTGFESNSAVVGKGKNQEEVVTTSYAFQTAKLRQIRA
+   AHVQGGNSLQVLNFVIFPHLNYDLPFFGADLVTLPGGHLIALDMQPLFRDDSAYQAKYTEPILPIFHAHQ
+   QHLSWGGDFPEEAQPFFSPAFLWTRPQETAVVETQVFAAFKDYLKAYLDFVEQAEAVTDSQNLVAIKQAQ
+   LRYLRYRAEKDPARGMFKRFYGAEWTEEYIHGFLFDLERKLTVVK
+   
+Contributing
+------------
+
+This project welcomes contributions and suggestions. Most contributions require you to agree to a MIT LICENCE (MIT LIC) declaring that you have the right to, and actually do, grant us the rights to use your contribution. For details, visit `Code of Conduct <https://github.com/nickcafferry/PSSpred/blob/master/CODE_OF_CONDUCT.md>`_.
