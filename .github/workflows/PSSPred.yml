@@ -66,23 +66,7 @@ jobs:
          cp -f output7.ss ../../output\ results/        
          cd ../../output\ results/ 
          
-         git lfs install
-         git lfs track "*.dat"
-         git lfs track "*.ss"
-         git lfs track "*.aux"
-         git lfs track "*.txt"
-         git lfs track "*.chk"
-         git lfs track "*.fasta"
-         git lfs track "*.mn"
-         git lfs track "*.mtx"
-         git lfs track "*.pn"
-         git lfs track "freqccw"
-         git lfs track "freqccwG"
-         git lfs track "mtx"
-         git lfs track "profw"
-         git add .gitattributes
-         git commit -m "add gitattributes"
-         
+  
          git add seq.dat
          git commit -m "Add seq.dat"
          git add seq.dat.ss
