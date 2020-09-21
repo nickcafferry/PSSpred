@@ -88,6 +88,7 @@ jobs:
          git commit -m "remove output6.ss"
          git rm -f output7.ss
          git commit -m "remove output7.ss"
+         git push origin master
          
          echo "moving new results to the file output results..."
          cd ../src/PSSpred_v4/
