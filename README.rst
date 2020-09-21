@@ -35,9 +35,10 @@ Installation
 
 No installation is needed! 
 
-Simply fork this project and edit the file `seq.fasta` in `FASTA Format` in your own repository, then you can acquire the outputs through `github worflow <https://github.com/nickcafferry/PSSpred/actions/runs/263139727>`_ , and download them via `artifacts link <https://github.com/nickcafferry/PSSpred/suites/1217285162/artifacts/18180747>`_. The output files contains two results, one for `seq.dat` (PSSpred prediction in I-TASSER format), one for `seq.dat.ss` (the original confidence file). If you want to check more results, you need to edit github workflow file `PSSPred.yml <>`
+Simply fork this project and edit the file `seq.fasta` in `FASTA Format` in your own repository, then you can acquire the outputs through `github worflow <https://github.com/nickcafferry/PSSpred/actions/runs/263139727>`_ , and download them via `artifacts link <https://github.com/nickcafferry/PSSpred/suites/1217285162/artifacts/18180747>`_. The output files contains two results, one for `seq.dat` (PSSpred prediction in I-TASSER format), one for `seq.dat.ss` (the original confidence file). If you want to check more results, you need to edit github workflow file `PSSPred.yml <https://github.com/nickcafferry/PSSpred/blob/master/.github/workflows/PSSPred.yml>`_.
 
 .. code:: yaml
+   :linenos:
    
    name: PSSpred
 
