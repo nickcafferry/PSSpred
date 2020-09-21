@@ -45,6 +45,7 @@ jobs:
         make html
         cd build/html
         echo "PSSpred-mlms.org" > CNAME
+        rm -f /home/runner/PSSpred/.git/hooks/post-checkout
         
     - name: Deploy to GitHub pages
       uses: JamesIves/github-pages-deploy-action@master
