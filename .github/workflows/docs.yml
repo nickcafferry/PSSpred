@@ -8,27 +8,27 @@ on:
     branches:
       - master
 
-jobs:
-  build_docs_and_deploy:
-    runs-on: ubuntu-latest
-    name: Protein Secondary Structure prediction
-
-    steps:
-    - name: Checkout
-      uses: actions/checkout@master
-
-    - name: Clone pre repositories
-      run: |
-         git config --global user.email "ucecwme@ucl.ac.uk"
-         git config --global user.name "nickcafferry"
-         git init
-         ls
-         
-         cd src/
-         git rm -rf nr_data
-         git commit -m "delete some irrelevant materials"
-         git push origin master
-
+#jobs:
+#  build_docs_and_deploy:
+#    runs-on: ubuntu-latest
+#    name: Protein Secondary Structure prediction
+#
+#    steps:
+#    - name: Checkout
+#      uses: actions/checkout@master
+#
+#    - name: Clone pre repositories
+#      run: |
+#         git config --global user.email "ucecwme@ucl.ac.uk"
+#         git config --global user.name "nickcafferry"
+#         git init
+#         ls
+#         
+#         cd src/
+#         git rm -rf nr_data
+#         git commit -m "delete some irrelevant materials"
+#         git push origin master
+#
 #
 #         mkdir PSSpred_v1
 #         cd PSSpred_v1/
