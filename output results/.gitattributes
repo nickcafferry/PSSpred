@@ -1,0 +1,13 @@
+*.dat filter=lfs diff=lfs merge=lfs -text
+*.ss filter=lfs diff=lfs merge=lfs -text
+*.aux filter=lfs diff=lfs merge=lfs -text
+*.txt filter=lfs diff=lfs merge=lfs -text
+*.chk filter=lfs diff=lfs merge=lfs -text
+*.fasta filter=lfs diff=lfs merge=lfs -text
+*.mn filter=lfs diff=lfs merge=lfs -text
+*.mtx filter=lfs diff=lfs merge=lfs -text
+*.pn filter=lfs diff=lfs merge=lfs -text
+freqccw filter=lfs diff=lfs merge=lfs -text
+freqccwG filter=lfs diff=lfs merge=lfs -text
+mtx filter=lfs diff=lfs merge=lfs -text
+profw filter=lfs diff=lfs merge=lfs -text
