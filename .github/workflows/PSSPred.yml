@@ -16,10 +16,7 @@ jobs:
 
     - name: running perl
       run: |
-         git config --global user.email "ucecwme@ucl.ac.uk"
-         git config --global user.name "nickcafferry"
-         git init
-         echo "Initializing Repository.........."
+         echo "Initializing the program....................."
          
          echo "---------------------------------------------"
          cd ../
