@@ -213,8 +213,10 @@ Sequences are expected to be represented in the standard IUB/IUPAC amino acid an
 - any numerical digits in the query sequence should either be removed or replaced by appropriate letter codes (e.g., N for unknown nucleic acid residue or X for unknown amino acid residue).
 
 
-The nucleic acid codes are::
-   
+The nucleic acid codes are:
+ 
+.. code:: yaml
+
         A --> adenosine           M --> A C (amino)
         C --> cytidine            S --> G C (strong)
         G --> guanine             W --> A T (weak)
@@ -225,7 +227,9 @@ The nucleic acid codes are::
         K --> G T (keto)          N --> A G C T (any)
                                     -  gap of indeterminate length
 
-The accepted amino acid codes are::
+The accepted amino acid codes are:
+
+.. code:: yaml
    
     A ALA alanine                         P PRO proline
     B ASX aspartate or asparagine         Q GLN glutamine
@@ -247,7 +251,9 @@ FASTA format
 FASTA format is a text-based format for representing either nucleotide sequences or peptide sequences, in which base pairs or amino acids are represented using single-letter codes. A sequence in FASTA format begins with a single-line description, followed by lines of sequence data. The description line is distinguished from the sequence data by a greater-than (">") symbol in the first column. It is recommended that all lines of text be shorter than 80 characters in length.
 
 An example sequence in FASTA format is::
-   
+
+.. code:: yaml
+
    >gi|186681228|ref|YP_001864424.1| phycoerythrobilin:ferredoxin oxidoreductase
    MNSERSDVTLYQPFLDYAIAYMRSRLDLEPYPIPTGFESNSAVVGKGKNQEEVVTTSYAFQTAKLRQIRA
    AHVQGGNSLQVLNFVIFPHLNYDLPFFGADLVTLPGGHLIALDMQPLFRDDSAYQAKYTEPILPIFHAHQ
