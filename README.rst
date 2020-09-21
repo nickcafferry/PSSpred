@@ -16,7 +16,7 @@ PSSpred
    :target: https://codecov.io/gh/nickcafferry/PSSpred
 
 .. |Appveyor| image:: https://ci.appveyor.com/api/projects/status/j5e243jmixcnqpy2?svg=true
-   :target: https://ci.appveyor.com/project/nickcafferry/psspred)
+   :target: https://ci.appveyor.com/project/nickcafferry/psspred
 
 .. |Gitter| image:: https://badges.gitter.im/PSSpred/community.svg
    :target: https://gitter.im/PSSpred/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge
