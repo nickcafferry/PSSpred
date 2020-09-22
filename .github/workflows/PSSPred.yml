@@ -1,3 +1,43 @@
+#         git rm -f seq.dat
+#         git commit -m "remove seq.dat"
+#         git rm -f seq.dat.ss
+#         git commit -m "remove seq.dat.ss"
+#         git rm -f psitmp.aux
+#         git commit -m "remove psitmp.aux"
+#         git rm -f pssm.txt
+#         git commit -m "remove pssm.txt"
+#         git rm -f psitmp.chk
+#         git commit -m "remove psitmp.chk"
+#         git rm -f psitmp.fasta
+#         git commit -m "remove psitmp.fasta"
+#         git rm -f psitmp.mn
+#         git commit -m "remove psitmp.mn"
+#         git rm -f psitmp.mtx
+#         git commit -m "remove psitmp.mtx"
+#         git rm -f psitmp.pn
+#         git commit -m "remove pstimp.pn"
+#         git rm -f freqccw
+#         git commit -m "remove freqccw"
+#         git rm -f freqccwG
+#         git commit -m "remove freqccwG"
+#         git rm -f mtx
+#         git commit -m "remove mtx"
+#         git rm -f profw
+#         git commit -m "remove profw"
+#         git rm -f output1.ss
+#         git commit -m "remove output1.ss"
+#         git rm -f output2.ss
+#         git commit -m "remove output1.ss"
+#         git rm -f output3.ss
+#         git commit -m "remove output3.ss"
+#         git rm -f output4.ss
+#         git commit -m "remove output4.ss"
+#         git rm -f output5.ss
+#         git commit -m "remove output5.ss"
+#         git rm -f output6.ss
+#         git commit -m "remove output6.ss"
+#         git rm -f output7.ss
+#         git commit -m "remove output7.ss" 
 name: PSSpred
 
 on:
@@ -50,46 +90,6 @@ jobs:
          
          echo "deleting previous output results..."
          cd ../../output\ results/
-         git rm -f seq.dat
-         git commit -m "remove seq.dat"
-         git rm -f seq.dat.ss
-         git commit -m "remove seq.dat.ss"
-         git rm -f psitmp.aux
-         git commit -m "remove psitmp.aux"
-         git rm -f pssm.txt
-         git commit -m "remove pssm.txt"
-         git rm -f psitmp.chk
-         git commit -m "remove psitmp.chk"
-         git rm -f psitmp.fasta
-         git commit -m "remove psitmp.fasta"
-         git rm -f psitmp.mn
-         git commit -m "remove psitmp.mn"
-         git rm -f psitmp.mtx
-         git commit -m "remove psitmp.mtx"
-         git rm -f psitmp.pn
-         git commit -m "remove pstimp.pn"
-         git rm -f freqccw
-         git commit -m "remove freqccw"
-         git rm -f freqccwG
-         git commit -m "remove freqccwG"
-         git rm -f mtx
-         git commit -m "remove mtx"
-         git rm -f profw
-         git commit -m "remove profw"
-         git rm -f output1.ss
-         git commit -m "remove output1.ss"
-         git rm -f output2.ss
-         git commit -m "remove output1.ss"
-         git rm -f output3.ss
-         git commit -m "remove output3.ss"
-         git rm -f output4.ss
-         git commit -m "remove output4.ss"
-         git rm -f output5.ss
-         git commit -m "remove output5.ss"
-         git rm -f output6.ss
-         git commit -m "remove output6.ss"
-         git rm -f output7.ss
-         git commit -m "remove output7.ss"
          git push origin master
          
          echo "moving new results to the file output results..."
