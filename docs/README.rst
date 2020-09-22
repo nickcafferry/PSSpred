@@ -33,6 +33,12 @@ PSSpred (Protein Secondary Structure prediction) is a simple neural network trai
 
 We have community chat at `Gitter <https://gitter.im/PSSpred/community#>`_. Feel free to ask us anything there. We have a very welcoming and helpful community.
 
+.. raw:: html
+   
+    <script src="https://3Dmol.org/build/3Dmol-min.js" async></script>     
+         <div style="height: 400px; width: 400px; position: relative;" class='viewer_3Dmoljs' data-href='https://tensorflow-ml.readthedocs.io/zh/latest/_static/QHD4.pdb' data-backgroundcolor='0xffffff' data-style='cartoon:color=spectrum'></div>  
+         
+
 Installation
 -------
 
