@@ -90,6 +90,145 @@ jobs:
          
          echo "deleting previous output results..."
          cd ../../output\ results/
+         if [ -f "seq.dat" ];then
+           git rm -f seq.dat
+           git commit -m "remove seq.dat"
+           else
+           echo "passing"
+         fi
+         if [ -f "seq.dat.ss" ];then
+           git rm -f seq.dat.ss
+           git commit -m "remove seq.dat.ss"
+           else
+           echo "passing"
+         fi
+         
+         if [ -f "psitmp.aux" ];then
+           git rm -f psitmp.aux
+           git commit -m "remove psitmp.aux"
+           else
+           echo "passing"
+         fi
+         
+         if [ -f "pssm.txt" ];then
+           git rm -f pssm.txt
+           git commit -m "remove pssm.txt"
+           else
+           echo "passing"
+         fi
+         
+         if [ -f "psitmp.chk" ];then
+           git rm -f psitmp.chk
+           git commit -m "remove psitmp.chk"
+           else
+           echo "passing"
+         fi
+         
+         if [ -f "psitmp.fasta" ];then
+           git rm -f psitmp.fasta
+           git commit -m "remove psitmp.fasta"
+           else
+           echo "passing"
+         fi
+         
+         if [ -f "psitmp.mn" ];then
+           git rm -f psitmp.mn
+           git commit -m "remove psitmp.mn"
+           else
+           echo "passing"
+         fi
+         
+         if [ -f "psitmp.mtx" ];then
+           git rm -f psitmp.mtx
+           git commit -m "remove psitmp.mtx"
+           else
+           echo "passing"
+         fi
+         
+         if [ -f "psitmp.pn" ];then
+           git rm -f psitmp.pn
+           git commit -m "remove pstimp.pn"
+           else
+           echo "passing"
+         fi
+         
+         if [ -f "freqccw" ];then
+           git rm -f freqccw
+           git commit -m "remove freqccw"
+           else
+           echo "passing"
+         fi
+         
+         if [ -f "freqccwG" ];then
+           git rm -f freqccwG
+           git commit -m "remove freqccwG"
+           else
+           echo "passing"
+         fi
+         
+         if [ -f "mtx" ];then
+           git rm -f mtx
+           git commit -m "remove mtx"
+           else
+           echo "passing"
+         fi
+        
+         if [ -f "profw" ];then
+           git rm -f profw
+           git commit -m "remove profw"
+           else
+           echo "passing"
+         fi
+         
+         if [ -f "output1.ss" ];then
+           git rm -f output1.ss
+           git commit -m "remove output1.ss"
+           else
+           echo "passing"
+         fi
+         
+         if [ -f "output2.ss" ];then
+           git rm -f output2.ss
+           git commit -m "remove output2.ss"
+           else
+           echo "passing"
+         fi
+         
+         if [ -f "output3.ss" ];then
+           git rm -f output3.ss
+           git commit -m "remove output3.ss"
+           else
+           echo "passing"
+         fi 
+  
+         if [ -f "output4.ss" ];then
+           git rm -f output4.ss
+           git commit -m "remove output4.ss"
+           else
+           echo "passing"
+         fi
+
+         if [ -f "output5.ss" ];then
+           git rm -f output5.ss
+           git commit -m "remove output5.ss"
+           else
+           echo "passing"
+         fi
+         
+         if [ -f "output6.ss" ];then
+           git rm -f output6.ss
+           git commit -m "remove output6.ss"
+           else
+           echo "passing"
+         fi    
+         
+         if [ -f "output7.ss" ];then
+           git rm -f output7.ss
+           git commit -m "remove output7.ss"
+           else
+           echo "passing"
+         fi         
+
          git push origin master
          
          echo "moving new results to the file output results..."
