@@ -35,10 +35,17 @@ We have community chat at `Gitter <https://gitter.im/PSSpred/community#>`_. Feel
 
 .. raw:: html
    
-    <script src="https://3Dmol.org/build/3Dmol-min.js" async></script>     
-         <div style="height: 400px; width: 400px; position: relative;" class='viewer_3Dmoljs' data-href='https://tensorflow-ml.readthedocs.io/zh/latest/_static/QHD4.pdb' data-backgroundcolor='0xffffff' data-style='cartoon:color=spectrum'></div>  
+    <script src="https://3Dmol.csb.pitt.edu/build/3Dmol-min.js"></script>
+    <div style="height: 400px; width: 400px; position: relative;"  class='viewer_3Dmoljs' data-pdb='1UBQ' data-backgroundcolor='0xffffff' data-style='{"cartoon":{"color": "spectrum"}}'></div>
+    <script>
+      setInterval(function() {
+        if($3Dmol.viewers) if($3Dmol.viewers[0]) {
+          var view = $3Dmol.viewers[0];
+          view.rotate(1);
+        }
+      }, 50);
+    </script>
          
-
 Installation
 -------
 
