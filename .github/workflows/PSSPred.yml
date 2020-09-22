@@ -14,7 +14,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@master
 
-    - name: running PSSpred
+    - name: running psspred
       run: |
          git config --global user.email "ucecwme@ucl.ac.uk"
          git config --global user.name "nickcafferry"
@@ -42,6 +42,8 @@ jobs:
          cd ../
          cd PSSpred_v4/
          ./PSSpred.pl seq.fasta
+         echo "Showing the output files:"
+         ls -lt
          cp seq.dat /home/runner/work/PSSpred/output/
          cp seq.dat.ss /home/runner/work/PSSpred/output/
          cp blast.out /home/runner/work/PSSpred/output/
@@ -105,13 +107,49 @@ jobs:
          cp -f freqccwG ../../output\ results/
          cp -f mtx ../../output\ results/  
          cp -f profw ../../output\ results/
-         cp -f output1.ss ../../output\ results/           
-         cp -f output2.ss ../../output\ results/   
-         cp -f output3.ss ../../output\ results/           
-         cp -f output4.ss ../../output\ results/   
-         cp -f output5.ss ../../output\ results/           
-         cp -f output6.ss ../../output\ results/   
-         cp -f output7.ss ../../output\ results/        
+         
+         if [ -f "output1.ss" ];then
+           echo "output1.ss exists, deliver it to output results..."
+           cp -f output1.ss ../../output\ results/
+           else
+           echo "output1.ss doesn't exists"
+         fi
+         if [ -f "output2.ss" ];then
+           echo "output2.ss exists, deliver it to output results..."
+           cp -f output2.ss ../../output\ results/
+           else
+           echo "output2.ss doesn't exists"
+         fi         
+         if [ -f "output3.ss" ];then
+           echo "output3.ss exists, deliver it to output results..."
+           cp -f output3.ss ../../output\ results/
+           else
+           echo "output3.ss doesn't exists"
+         fi
+         if [ -f "output4.ss" ];then
+           echo "output4.ss exists, deliver it to output results..."
+           cp -f output4.ss ../../output\ results/
+           else
+           echo "output4.ss doesn't exists"
+         fi
+         if [ -f "output5.ss" ];then
+           echo "output5.ss exists, deliver it to output results..."
+           cp -f output5.ss ../../output\ results/
+           else
+           echo "output5.ss doesn't exists"
+         fi
+         if [ -f "output6.ss" ];then
+           echo "output6.ss exists, deliver it to output results..."
+           cp -f output6.ss ../../output\ results/
+           else
+           echo "output6.ss doesn't exists"
+         fi
+         if [ -f "output7.ss" ];then
+           echo "output7.ss exists, deliver it to output results..."
+           cp -f output7.ss ../../output\ results/
+           else
+           echo "output7.ss doesn't exists"
+         fi   
          cd ../../output\ results/ 
 
          echo "pushing to github repository..."
@@ -141,20 +179,57 @@ jobs:
          git commit -m "add mtx"
          git add profw
          git commit -m "add profw"
-         git add output1.ss
-         git commit -m "add output1.ss"
-         git add output2.ss
-         git commit -m "add output1.ss"
-         git add output3.ss
-         git commit -m "add output3.ss"
-         git add output4.ss
-         git commit -m "add output4.ss"
-         git add output5.ss
-         git commit -m "add output5.ss"
-         git add output6.ss
-         git commit -m "add output6.ss"
-         git add output7.ss
-         git commit -m "add output7.ss"
+
+         if [ -f "output1.ss" ];then
+           echo "output1.ss exists, deliver it to the project..."
+           git add output1.ss
+           git commit -m "add output1.ss"  
+           else
+           echo "output1.ss doesn't exists"
+         fi
+         if [ -f "output2.ss" ];then
+           echo "output2.ss exists, deliver it to the project..."
+           git add output2.ss
+           git commit -m "add output2.ss" 
+           else
+           echo "output2.ss doesn't exists"
+         fi         
+         if [ -f "output3.ss" ];then
+           echo "output3.ss exists, deliver it to the project..."
+           git add output3.ss
+           git commit -m "add output3.ss" 
+           else
+           echo "output3.ss doesn't exists"
+         fi
+         if [ -f "output4.ss" ];then
+           echo "output4.ss exists, deliver it to the project..."
+           git add output4.ss
+           git commit -m "add output4.ss" 
+           else
+           echo "output4.ss doesn't exists"
+         fi
+         if [ -f "output5.ss" ];then
+           echo "output5.ss exists, deliver it to the project..."
+           git add output5.ss
+           git commit -m "add output5.ss" 
+           else
+           echo "output5.ss doesn't exists"
+         fi
+         if [ -f "output6.ss" ];then
+           echo "output6.ss exists, deliver it to the project..."
+           git add output6.ss
+           git commit -m "add output6.ss" 
+           else
+           echo "output6.ss doesn't exists"
+         fi
+         if [ -f "output7.ss" ];then
+           echo "output7.ss exists, deliver it to the project..."
+           git add output7.ss
+           git commit -m "add output7.ss" 
+           else
+           echo "output7.ss doesn't exists"
+         fi 
+         
          cd /home/runner/work/PSSpred/PSSpred/
          git push origin master
         
