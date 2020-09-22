@@ -98,11 +98,11 @@ Github-Actions
            name: output results
            path: /home/runner/work/PSSpred/output/ 
 
-Not familiar with ```FASTA format``` ? Don't panick, this project is very user-friendly. You can type the following protein sequence::
+Not familiar with ```FASTA format```? Don't panick, this project is very user-friendly. You can type the following protein sequence::
    
    MVLSEGEWQLVLHVWAKVEADVAGHGQDILIRLFKSHPETLEKFDRVKHLKTEAEMKASEDLKKHGVTVLTALGAILKKKGHHEAELKPLAQSHATKHKIPIKYLEFISEAIIHVLHSRHPGNFGADAQLELGAMNKAFRKDIAAKYKELGYQG
 
-in ```seq_1.txt``` simply, and upload to the directory (path: src/PSSpred_v4/). Wait for almost 8 minutes (check Appveyor build status: pending? failed? passing?), download the `output files <https://ci.appveyor.com/project/nickcafferry/psspred/builds/35307987/artifacts>`_ when the job is done.
+in ```seq_1.txt``` simply, and upload to the directory (path: src/PSSpred_v4/). Wait for almost 8 minutes (check Appveyor build status: pending? failing? passing?), download the `output files <https://ci.appveyor.com/project/nickcafferry/psspred/builds/35307987/artifacts>`_ when the job is done.
 
 .. image:: https://avatars3.githubusercontent.com/ml/11?s=62&v=4
    :target: https://www.appveyor.com/
