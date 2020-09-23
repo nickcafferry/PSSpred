@@ -291,9 +291,9 @@ Snapshot of seq.dat
 .. code:: python
    
        1   MET    1    9 # the first column stands for numbers in order
-       2   GLU    1    9 # the second column is the amino acid code
-       3   SER    1    8 # the third one represents the confidence score: 1-9
-       4   LEU    1    8
+       2   GLU    1    9 # the second column is the amino acid code (see `About Protein Sequence` for more details)
+       3   SER    1    8 # the third one represents the secondary structure code: 1<->helix, 2<->coil, 4<->strand
+       4   LEU    1    8 # the fourth one represents the confidence score: 1-9
        5   VAL    1    8
        6   PRO    1    8
        7   GLY    1    8
