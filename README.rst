@@ -363,4 +363,4 @@ This project welcomes contributions and suggestions. Most contributions require 
 Refrence
 --------
 
-Renxiang Yan, Dong Xu, Jianyi Yang, Sara Walker, Yang Zhang. A comparative assessment and analysis of 20 representative sequence alignment methods for protein structure prediction. Scientific Reports, 3: 2619 (2013). 
+Renxiang Yan, Dong Xu, Jianyi Yang, Sara Walker, Yang Zhang. `A comparative assessment and analysis of 20 representative sequence alignment methods for protein structure prediction <https://zhanglab.ccmb.med.umich.edu/papers/2013_18.pdf>`_. Scientific Reports, 3: 2619 (2013). 
