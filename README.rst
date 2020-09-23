@@ -33,9 +33,9 @@ PSSpred (Protein Secondary Structure prediction) is a simple neural network trai
 
 We have community chat at `Gitter <https://gitter.im/PSSpred/community#>`_. Feel free to ask us anything there. We have a very welcoming and helpful community.
 
-<div align="center">
-  <img border="0"  src="https://zhanglab.ccmb.med.umich.edu/COVID-19/QHD43415_1.png" width="300">
-</div>
+.. raw:: html
+   
+   <img border="0"  src="https://zhanglab.ccmb.med.umich.edu/COVID-19/QHD43415_1.png" width="300">
 
 Installation
 -------
