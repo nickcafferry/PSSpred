@@ -256,7 +256,90 @@ The accepted amino acid codes are:
     L LEU leucine                         X     any
     M MET methionine                      *     translation stop
     N ASN asparagine                      -     gap of indeterminate length
-    
+
+Notes
+^^^^^^^^^^^
+
+- seq.txt is fasta file at current directory (the only input file). If you know about `FASTA format`, you can always use that format.
+
+- output files::
+   
+   seq.dat
+   seq.dat.ss
+
+- PSSpred.pl consists of three steps::
+   
+   a. prepare and run PSI-BLAST
+   b. prepare mtx, pssm.txt, profw, freqccw, freqccwG
+   c. run PSSpred and generate output files
+
+Example input file
+^^^^^^^^^^^^^^^^^^^^
+Input file: seq_1.txt(src/PSSpred_v4/seq_1.txt)
+
+.. code:: python
+   
+   MESLVPGFNEKTHVQLSLPVLQVRDVLVRGFGDSVEEVLS
+   EARQHLKDGTCGLVEVEKGVLPQLEQPYVFIKRSDARTAP
+   HGHVMVELVAELEGIQYGRSGETLGVLVPHVGEIPVAYRK
+   VLLRKNGNKGAGGHSYGADLKSFDLGDELGTDPYEDFQEN
+   WNTKHSSGVTRELMRELNGG   
+
+Snapshot of seq.dat
+^^^^^^^^^^^^^^^^^^
+
+.. code:: python
+   
+       1   MET    1    9 # the first column stands for numbers in order
+       2   GLU    1    9 # the second column is the amino acid code
+       3   SER    1    8 # the third one represents the confidence score: 1-9
+       4   LEU    1    8
+       5   VAL    1    8
+       6   PRO    1    8
+       7   GLY    1    8
+       8   PHE    1    7
+       9   ASN    1    6
+      10   GLU    1    3
+      11   LYS    1    1
+      12   THR    4    3
+      13   HIS    4    6
+      14   VAL    4    8
+      15   GLN    4    9
+      16   LEU    4    9
+      17   SER    4    8
+      18   LEU    4    6
+      19   PRO    4    5
+      20   VAL    4    5
+
+Snapshot of seq.dat.ss
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. code:: python
+   
+           180   coil  helix  beta   # 180: the total number of sequence
+                                     # Protein secondary structure: coil, helix, beta
+         1 M C  0.958  0.024  0.012  # the third column: the most possible secondary structure (C-coil, H-helix, E-strand)
+         2 E C  0.900  0.043  0.046  # the second column: input sequence
+         3 S C  0.871  0.072  0.061  # the first column: enumeration number
+         4 L C  0.872  0.064  0.067  # 4-6 columns: probability of corresponding protein secondary structure
+         5 V C  0.891  0.053  0.062 
+         6 P C  0.902  0.042  0.061 
+         7 G C  0.886  0.046  0.070 
+         8 F C  0.808  0.086  0.096 
+         9 N C  0.715  0.124  0.154 
+        10 E C  0.620  0.124  0.272 
+        11 K C  0.546  0.053  0.416 
+        12 T E  0.364  0.013  0.636 
+        13 H E  0.220  0.007  0.782 
+        14 V E  0.105  0.005  0.902 
+        15 Q E  0.069  0.004  0.936 
+        16 L E  0.076  0.005  0.928 
+        17 S E  0.112  0.005  0.895 
+        18 L E  0.204  0.005  0.800 
+        19 P E  0.230  0.008  0.760 
+        20 V E  0.229  0.012  0.760 
+
+
 FASTA format
 ------------
 
