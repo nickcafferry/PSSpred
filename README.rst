@@ -35,7 +35,9 @@ We have community chat at `Gitter <https://gitter.im/PSSpred/community#>`_. Feel
 
 .. raw:: html
    
-   <img border="0"  src="https://zhanglab.ccmb.med.umich.edu/COVID-19/QHD43415_1.png" width="300">
+   <div align="center">
+     <img border="0"  src="https://zhanglab.ccmb.med.umich.edu/COVID-19/QHD43415_1.png" width="300">
+   </div>
 
 Installation
 -------
