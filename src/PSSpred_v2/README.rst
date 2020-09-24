@@ -2,11 +2,11 @@ This is a script program for protein secondary structure prediction (PSSpred) ba
 back-propagation of erros method. The final SS prediction is a  combination of 7 neural network SS predictors. 
 
 
-1. how to install PSSpred?
-   
+1. how to install PSSpred?::
    
    a. download ```PSSpred_v2.tar.gz``` at
-       `PSSpred_v2.tar.gz <http://zhanglab.ccmb.med.umich.edu/PSSpred/>`_
+       
+       http://zhanglab.ccmb.med.umich.edu/PSSpred/
 
    b. unpack the PSSpred files by ```tar -zxvf PSSpred_v2.tar.gz```::
    	
@@ -14,13 +14,13 @@ back-propagation of erros method. The final SS prediction is a  combination of 7
 
    c. download and install non-redundant sequence file at 
 
-`non-redundant sequence file <http://zhanglab.ccmb.med.umich.edu/cgi-bin/download_ftp.cgi?ID=nr.tar.gz>`_
+       http://zhanglab.ccmb.med.umich.edu/cgi-bin/download_ftp.cgi?ID=nr.tar.gz
 
-   d, download and install psi-blast program at
+   d. download and install psi-blast program at
        
-       `psi-blast <http://zhanglab.ccmb.med.umich.edu/PSSpred/blastv2.6.tar.gz>`_
+       http://zhanglab.ccmb.med.umich.edu/PSSpred/blastv2.6.tar.gz
 
-   e, change the path ($blastdir, $db, $PSSpreddir) in ```PSSpred.pl```
+   e. change the path ($blastdir, $db, $PSSpreddir) in ```PSSpred.pl```
 
 2. how to run 'PSSpred.pl' in Linux system?:
 
