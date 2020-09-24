@@ -27,9 +27,9 @@ PSSpred
 .. |Documentation Status| image:: https://readthedocs.org/projects/psspred/badge/?version=latest
    :target: https://psspred.readthedocs.io/en/latest/?badge=latest
 
-A simple neural network training algorithm for accurate protein secondary structure prediction (PSSpred) !
+A simple neural network training algorithm for accurate `protein secondary structure <https://proteinstructures.com/Structure/Structure/secondary-sructure.html>`_ prediction (PSSpred) !
 
-PSSpred (Protein Secondary Structure prediction) is a simple neural network training algorithm for accurate protein secondary structure prediction. It first collects multiple sequence alignments using PSI-BLAST. Amino-acid frequence and log-odds data with Henikoff weights are then used to train secondary structure, separately, based on the Rumelhart error backpropagation method. The final secondary structure prediction result is a combination of 7 neural network predictors from different profile data and parameters. The program is freely downloadable on this page.
+PSSpred (`Protein Secondary Structure <https://proteinstructures.com/Structure/Structure/secondary-sructure.html>`_ prediction) is a simple neural network training algorithm for accurate protein secondary structure prediction. It first collects multiple sequence alignments using PSI-BLAST. Amino-acid frequence and log-odds data with Henikoff weights are then used to train secondary structure, separately, based on the Rumelhart error backpropagation method. The final secondary structure prediction result is a combination of 7 neural network predictors from different profile data and parameters. The program is freely downloadable on this page.
 
 We have a community chat at `Gitter <https://gitter.im/PSSpred/community#>`_. Feel free to ask us anything there. We have a very welcoming and helpful community.
 
