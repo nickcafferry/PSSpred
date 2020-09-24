@@ -4,22 +4,23 @@ back-propagation of erros method. The final SS prediction is a  combination of 7
 
 1. how to install PSSpred?
    
-   a. download 'PSSpred_v2.tar.gz' at
+   
+   a. download ```PSSpred_v2.tar.gz``` at
        `PSSpred_v2.tar.gz <http://zhanglab.ccmb.med.umich.edu/PSSpred/>`_
 
-   b. unpack the PSSpred files by "tar -zxvf PSSpred_v2.tar.gz"::
+   b. unpack the PSSpred files by ```tar -zxvf PSSpred_v2.tar.gz```::
    	
 	$ tar -zxvf PSSpred_v2.tar.gz
 
    c. download and install non-redundant sequence file at 
-   
+
 `non-redundant sequence file <http://zhanglab.ccmb.med.umich.edu/cgi-bin/download_ftp.cgi?ID=nr.tar.gz>`_
 
    d, download and install psi-blast program at
        
        `psi-blast <http://zhanglab.ccmb.med.umich.edu/PSSpred/blastv2.6.tar.gz>`_
 
-   e, change the path ($blastdir, $db, $PSSpreddir) in 'PSSpred.pl'
+   e, change the path ($blastdir, $db, $PSSpreddir) in ```PSSpred.pl```
 
 2. how to run 'PSSpred.pl' in Linux system?:
 
