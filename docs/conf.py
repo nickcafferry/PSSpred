@@ -42,7 +42,7 @@ html_static_path = ['assets']
 html_theme = 'haiku'
 html_theme_options = {
     'headingcolor': "pink",
-    'linkcolor': "pink",
+    'linkcolor': "red",
 }
 html_sidebars = {
    '**': ['globaltoc.html', 'sourcelink.html', 'searchbox.html'],
