@@ -57,7 +57,10 @@ We have a community chat at `Gitter <https://gitter.im/PSSpred/community#>`_. Fe
         }
       }, 50);
     </script>
-         
+ 
+.. raw:: html
+   :file: protein6xmp.html
+
 Installation
 -------
 
