@@ -41,7 +41,6 @@ pygments_style = 'default'
 html_static_path = ['assets']
 html_theme = 'haiku'
 html_theme_options = {
-    'headingcolor': "pink",
     'linkcolor': "red",
 }
 html_sidebars = {
