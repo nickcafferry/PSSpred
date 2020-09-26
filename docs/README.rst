@@ -27,6 +27,18 @@ PSSpred
 .. |Documentation Status| image:: https://readthedocs.org/projects/psspred/badge/?version=latest
    :target: https://psspred.readthedocs.io/en/latest/?badge=latest
 
+Copyright |copy| Wei MEI, |MLMS (TM)| |---|
+all rights reserved. 
+|bamboo|
+
+.. |copy| unicode:: 0xA9 .. copyright sign
+.. |MLMS (TM)| unicode:: MLMS U+2122
+   .. with trademark sign
+.. |---| unicode:: U+02014 .. em dash
+   :trim:
+
+.. |bamboo| unicode:: 0x1F024 .. bamboo
+
 A simple neural network training algorithm for accurate `protein secondary structure <https://proteinstructures.com/Structure/Structure/secondary-sructure.html>`_ prediction.
 
 PSSpred (`Protein Secondary Structure <https://proteinstructures.com/Structure/Structure/secondary-sructure.html>`_ prediction) is a simple neural network training algorithm for accurate `protein secondary structure <https://proteinstructures.com/Structure/Structure/secondary-sructure.html>`_ prediction. It first collects multiple sequence alignments using `PSI-BLAST <https://www.ebi.ac.uk/Tools/sss/psiblast/>`_. Amino-acid frequence and log-odds data with `Henikoff weights <https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/structural-property-of-proteins>`_ are then used to train `secondary structure <https://proteinstructures.com/Structure/Structure/secondary-sructure.html>`_, separately, based on the Rumelhart error backpropagation method. The final secondary structure prediction result is a combination of 7 neural network predictors from different profile data and parameters. The program is freely downloadable on this page.
