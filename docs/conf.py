@@ -41,7 +41,7 @@ pygments_style = 'default'
 html_static_path = ['assets']
 html_theme = 'haiku'
 html_theme_options = {
-    'linkcolor': "red",
+    'linkcolor': "pink",
 }
 html_sidebars = {
    '**': ['globaltoc.html', 'sourcelink.html', 'searchbox.html'],
