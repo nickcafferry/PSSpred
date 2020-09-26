@@ -27,9 +27,8 @@ PSSpred
 .. |Documentation Status| image:: https://readthedocs.org/projects/psspred/badge/?version=latest
    :target: https://psspred.readthedocs.io/en/latest/?badge=latest
 
-Copyright |copy| Wei MEI, |MLMS (TM)| |---|
-all rights reserved. 
-|bamboo|
+Copyright |copy| Wei MEI, |MLMS (TM)| |---| all rights reserved. |bamboo|
+"""""""""""""""""""""""""
 
 .. |copy| unicode:: 0xA9 .. copyright sign
 .. |MLMS (TM)| unicode:: MLMS U+2122
