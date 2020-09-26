@@ -366,7 +366,7 @@ An example sequence in FASTA format is:
 Contributing
 ------------
 
-This project welcomes contributions and suggestions. Most contributions require you to agree to a MIT LICENCE (MIT LIC) declaring that you have the right to, and actually do, grant us the rights to use your contribution. For details, visit `Code of Conduct <https://github.com/nickcafferry/PSSpred/blob/master/CODE_OF_CONDUCT.md>`_.
+This project welcomes contributions and suggestions. Most contributions require you to agree to a `MIT LICENCE <https://github.com/nickcafferry/PSSpred/blob/master/LICENSE>`_ (MIT LIC) declaring that you have the right to, and actually do, grant us the rights to use your contribution. For details, visit `Code of Conduct <https://github.com/nickcafferry/PSSpred/blob/master/CODE_OF_CONDUCT.md>`_.
 
 Refrence
 --------
