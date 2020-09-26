@@ -47,19 +47,26 @@ We have a community chat at `Gitter <https://gitter.im/PSSpred/community#>`_. Fe
 
 .. raw:: html
 
-    <script src="https://3Dmol.csb.pitt.edu/build/3Dmol-min.js"></script>
-    <div style="height: 400px; width: 400px; position: relative" align="center" class='viewer_3Dmoljs' data-pdb='1UBQ' data-backgroundcolor='0xffffff' data-select1='chain:A' data-style1='cartoon:color=spectrum' data-surface1='opacity:.7;color:white' data-select2='chain:B' data-style2='stick'></div>
-    <script>
-      setInterval(function() {
-        if($3Dmol.viewers) if($3Dmol.viewers[0]) {
-          var view = $3Dmol.viewers[0];
-          view.rotate(1);
-        }
-      }, 50);
-    </script>
- 
-.. raw:: html
-   :file: protein6xmp.html
+       <script src="https://3Dmol.csb.pitt.edu/build/3Dmol-min.js"></script>
+       <div style="height: 400px; width: 400px; position: absolute; left: 0px"  class='viewer_3Dmoljs' data-pdb='1BTN' data-backgroundcolor='0xffffff' data-select1='chain:A' data-style1='cartoon:color=spectrum' data-surface1='opacity:.7;color:white' data-select2='chain:B' data-style2='stick'></div>
+   <script>
+         setInterval(function() {
+           if($3Dmol.viewers) if($3Dmol.viewers[0]) {
+             var view = $3Dmol.viewers[0];
+             view.rotate(1);
+           }
+         }, 50);
+       </script>
+   
+   <div style="height: 400px; width: 400px; position: absolute; left: 400px"  class='viewer_3Dmoljs' data-pdb='1BON' data-backgroundcolor='0xffffff' data-select1='chain:A' data-style1='cartoon:color=spectrum' data-surface1='opacity:.7;color:white' data-select2='chain:B' data-style2='stick'></div>
+       <script>
+         setInterval(function() {
+           if($3Dmol.viewers) if($3Dmol.viewers[0]) {
+             var view = $3Dmol.viewers[0];
+             view.rotate(1);
+           }
+         }, 50);
+       </script>
 
 Installation
 -------
