@@ -1,7 +1,7 @@
 PSSpred
 ===============
 
-|Workflow| |Licence| |Travis| |Codecov| |Appveyor| |Gitter| |Documentation Status| |Circleci|
+|Workflow| |Licence| |Codecov| |Appveyor| |Gitter| |Circleci|
 
 .. |Workflow| image:: https://github.com/nickcafferry/PSSpred/workflows/PSSpred/badge.svg
    :target: https://github.com/nickcafferry/PSSpred/actions/runs/263139727
