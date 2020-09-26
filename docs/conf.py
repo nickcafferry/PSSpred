@@ -5,7 +5,7 @@ import os
 sys.path.insert(0, os.path.abspath("../../manim/"))
 
 project = u'PSSpred'
-copyright = u'- Wei MEI (Nick Cafferry).'
+copyright = u'- Wei MEI (Nick Cafferry)'
 author = u'Wei MEI'
 
 
@@ -40,9 +40,10 @@ pygments_style = 'default'
 
 html_static_path = ['assets']
 html_theme = 'haiku'
+html_logo = "GCC.png"
 html_theme_options = {
-    'logo_only': False,
-    'style_nav_header_background': '#343131',
+    'headingcolor': "pink",
+    'full_logo': true,
 }
 html_sidebars = {
    '**': ['globaltoc.html', 'sourcelink.html', 'searchbox.html'],
