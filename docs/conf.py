@@ -4,7 +4,7 @@ import sys
 import os
 sys.path.insert(0, os.path.abspath("../../manim/"))
 
-project = u'PSSpred'
+project = u'PSSpred-Protein Secondary Structure prediction'
 copyright = u'- Wei MEI (Nick Cafferry)'
 author = u'Wei MEI'
 
@@ -43,7 +43,7 @@ html_theme = 'haiku'
 html_logo = "GCC.png"
 html_theme_options = {
     'headingcolor': "pink",
-    'full_logo': true,
+    'linkcolor': "pink",
 }
 html_sidebars = {
    '**': ['globaltoc.html', 'sourcelink.html', 'searchbox.html'],
