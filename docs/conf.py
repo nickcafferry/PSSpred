@@ -40,7 +40,6 @@ pygments_style = 'default'
 
 html_static_path = ['assets']
 html_theme = 'haiku'
-html_logo = "GCC.png"
 html_theme_options = {
     'headingcolor': "pink",
     'linkcolor': "pink",
