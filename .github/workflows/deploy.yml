@@ -20,6 +20,7 @@ jobs:
         git clone -b push https://github.com/nickcafferry/PSSpred.git manim
         cd manim/
         rm -rf "output results"
+        rm .git/hooks/post-checkout
     
     - name: Install setuptools
       run: |
@@ -43,6 +44,7 @@ jobs:
     - name: Build document with Sphinx
       run: |
         rm -rf "output results"
+        rm .git/hooks/post-checkout
         export PATH="$PATH:/home/runner/.local/bin:/home/runner/PSSpred/manim"
         make html
         cd build/html
