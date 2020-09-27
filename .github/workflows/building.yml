@@ -1,4 +1,4 @@
-name: PSSpred
+name: PSSpred Software
 
 on:
   push:
@@ -8,7 +8,7 @@ on:
 jobs:
   build_docs_and_deploy:
     runs-on: ubuntu-latest
-    name: running PSSpred
+    name: building PSSpred
 
     steps:
     - name: Checkout
