@@ -45,6 +45,8 @@ jobs:
       run: |
         rm -rf "output results"
         rm .git/hooks/post-checkout
+        rm .git/hooks/post-commit
+        rm .git/hooks/pre-push
         export PATH="$PATH:/home/runner/.local/bin:/home/runner/PSSpred/manim"
         make html
         cd build/html
