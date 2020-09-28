@@ -39,7 +39,7 @@ all rights reserved.
 
 .. |bamboo| unicode:: 0x1F024 .. bamboo
 
-A simple neural network training algorithm for accurate `protein secondary structure <https://proteinstructures.com/Structure/Structure/secondary-sructure.html>`_ prediction (`PSSpred <https://github.com/nickcafferry/PSSpred>`_ )! See `documentation <https://readthedocs.org/projects/psspred/badge/?version=latest>`_ for more details.
+A simple `neural network training algorithm <https://www.verypossible.com/insights/machine-learning-algorithms-what-is-a-neural-network>`_ for accurate `protein secondary structure <https://proteinstructures.com/Structure/Structure/secondary-sructure.html>`_ prediction (`PSSpred <https://github.com/nickcafferry/PSSpred>`_ )! See `documentation <https://readthedocs.org/projects/psspred/badge/?version=latest>`_ for more details.
 
 PSSpred (`Protein Secondary Structure <https://proteinstructures.com/Structure/Structure/secondary-sructure.html>`_ prediction) is a simple neural network training algorithm for accurate `protein secondary structure <https://proteinstructures.com/Structure/Structure/secondary-sructure.html>`_ prediction. It first collects multiple sequence alignments using `PSI-BLAST <https://www.ebi.ac.uk/Tools/sss/psiblast/>`_. Amino-acid frequence and log-odds data with `Henikoff weights <https://www.sciencedirect.com/topics/biochemistry-genetics-and-molecular-biology/structural-property-of-proteins>`_ are then used to train secondary structure, separately, based on the Rumelhart error backpropagation method. The final secondary structure prediction result is a combination of 7 neural network predictors from different profile data and parameters. The program is freely downloadable on this page.
 
