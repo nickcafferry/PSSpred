@@ -38,12 +38,15 @@ html_search_language = 'Chinese'
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 'remain']
 pygments_style = 'default'
 
-html_logo = "GCC.svg"
-
 html_static_path = ['assets']
 html_theme = 'haiku'
 html_theme_options = {
     'linkcolor': "pink",
+    "external_links": [
+        {"url": "https://psspred.readthedocs.io/en/latest/README.html?badge=latest", "name": "PSSpred"}
+    ],
+    "github_url": "https://github.com/nickcafferry/PSSpred",
+
 }
 html_sidebars = {
    '**': ['globaltoc.html', 'sourcelink.html', 'searchbox.html'],
