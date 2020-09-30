@@ -38,6 +38,8 @@ html_search_language = 'Chinese'
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', 'remain']
 pygments_style = 'default'
 
+html_logo = "GCC.svg"
+
 html_static_path = ['assets']
 html_theme = 'haiku'
 html_theme_options = {
