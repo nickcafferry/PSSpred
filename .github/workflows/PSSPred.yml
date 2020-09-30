@@ -292,6 +292,7 @@ jobs:
          cd ../../output\ results/ 
 
          echo "pushing to github repository..."
+         git lfs install
          git add seq.dat
          git commit -m "Add seq.dat"
          git add seq.dat.ss
