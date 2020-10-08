@@ -40,6 +40,8 @@ pygments_style = 'default'
 
 html_static_path = ['assets']
 html_theme = 'haiku'
+html_logo = 'GCC.svg'
+html_favicon = 'GCC.svg'
 html_theme_options = {
     'linkcolor': "pink",
     "external_links": [
