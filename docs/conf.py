@@ -43,7 +43,7 @@ html_theme = 'haiku'
 html_logo = 'GCC.svg'
 html_favicon = 'GCC.svg'
 html_theme_options = {
-    'linkcolor': "pink",
+    'linkcolor': "red",
     "external_links": [
         {"url": "https://psspred.readthedocs.io/en/latest/README.html?badge=latest", "name": "PSSpred"}
     ],
