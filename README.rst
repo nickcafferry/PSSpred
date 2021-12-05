@@ -96,7 +96,7 @@ Github-Actions
             mkdir nr
             cd nr/
             wget -O nr.tar.gz https://zhanggroup.org/PSSpred/nr.tar.gz
-            tar -zxvf nr.tar.gz
+            tar -xvf nr.tar.gz
             echo "nr.tar.gz already unpacked!"
             echo "Show the path of this file: "
             pwd
@@ -136,7 +136,7 @@ Appveyor
           - sh: mkdir nr
           - sh: cd nr/
           - sh: wget -O nr.tar.gz https://zhanggroup.org/PSSpred/nr.tar.gz
-          - sh: tar -zxvf nr.tar.gz
+          - sh: tar -xvf nr.tar.gz
           - sh: cd ../PSSpred_v4/
           - sh: ./PSSpred.pl seq_1.txt
           - sh: pwd
