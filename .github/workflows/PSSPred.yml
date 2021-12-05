@@ -72,7 +72,7 @@ jobs:
          mkdir nr
          cd nr/
          wget -O nr.tar.gz https://zhanggroup.org/PSSpred/nr.tar.gz
-         tar -zxvf nr.tar.gz
+         tar -xvf nr.tar.gz
          echo "nr.tar.gz already unpacked!"
          echo "Show the path of this file: "
          pwd
