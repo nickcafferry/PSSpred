@@ -95,7 +95,7 @@ Github-Actions
             cd src/
             mkdir nr
             cd nr/
-            wget -O nr.tar.gz https://zhanglab.ccmb.med.umich.edu/cgi-bin/download_ftp.cgi?ID=nr.tar.gz
+            wget -O nr.tar.gz https://zhanggroup.org/PSSpred/nr.tar.gz
             tar -zxvf nr.tar.gz
             echo "nr.tar.gz already unpacked!"
             echo "Show the path of this file: "
@@ -135,7 +135,7 @@ Appveyor
           - sh: cd src/
           - sh: mkdir nr
           - sh: cd nr/
-          - sh: wget -O nr.tar.gz https://zhanglab.ccmb.med.umich.edu/cgi-bin/download_ftp.cgi?ID=nr.tar.gz
+          - sh: wget -O nr.tar.gz https://zhanggroup.org/PSSpred/nr.tar.gz
           - sh: tar -zxvf nr.tar.gz
           - sh: cd ../PSSpred_v4/
           - sh: ./PSSpred.pl seq_1.txt
@@ -180,7 +180,7 @@ CircleCI(file path: .circleci/config.yml)
                cd src/
                mkdir nr
                cd nr/
-               wget -O nr.tar.gz https://zhanglab.ccmb.med.umich.edu/cgi-bin/download_ftp.cgi?ID=nr.tar.gz
+               wget -O nr.tar.gz https://zhanggroup.org/PSSpred/nr.tar.gz
                tar -zxvf nr.tar.gz
                echo "nr.tar.gz already unpacked!"
                echo "Show the path of this file:"
